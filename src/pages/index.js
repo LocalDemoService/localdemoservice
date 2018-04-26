@@ -2,13 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import PostListing from '../components/Posts/PostListing'
 import Services from '../components/Home/Services'
-
+import Welcome from '../components/Home/Welcome'
 
 const IndexPage = ({ data }) => {
   console.log(data)
   return (
     <div>
       <Services data={data} />
+      <Welcome />
     </div>
   )
 }
@@ -48,5 +49,10 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     },
+    bgImage: imageSharp(id: { regex: "/bg-tile.jpg/" }) {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `
