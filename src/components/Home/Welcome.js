@@ -12,7 +12,10 @@ const Welcome = () => {
 
 const WelcomeContainer = styled.div`
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const WelcomeTitle = styled.h2`
@@ -22,7 +25,7 @@ const WelcomeTitle = styled.h2`
 
 const WelcomeText = styled.div`  
   text-align: center;
-  width: 34rem;
+  width: 34em;
 `
 
 export default Welcome;

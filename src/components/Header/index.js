@@ -8,7 +8,7 @@ import styled from 'styled-components'
 class Header extends Component {
 
   render() {
-    const { data, location } = this.props
+    const { data } = this.props
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
@@ -21,7 +21,8 @@ class Header extends Component {
                 textShadow: `1px 1px 1px #999, 
                 3px 3px 5px #777`,
                 textDecoration: 'none',
-                letterSpacing: '1rem'
+                letterSpacing: '1rem',
+                fontWeight: 100
               }} >
               {data.site.siteMetadata.title}
             </Link>

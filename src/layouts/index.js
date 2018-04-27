@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 const TemplateWrapper = ({ children, data, location }) => (
@@ -20,6 +21,7 @@ const TemplateWrapper = ({ children, data, location }) => (
     <Content>
       {children()}
     </Content>
+    <Footer />
   </div>
 )
 
