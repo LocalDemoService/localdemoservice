@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import { Facebook, Twitter } from 'react-svg-logos' 
+import { Facebook, Twitter } from 'react-svg-logos'
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
         <Link to={'/careers'}>Careers</Link>
       </FooterLinks>
       <FooterSocial>
-        <Facebook />
+        <Facebook style={{ height: 100 }} />
       </FooterSocial>
     </FooterContainer>
   );
