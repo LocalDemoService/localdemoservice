@@ -51,13 +51,13 @@ const Services = ({ data }) => {
 };
 
 const BackgroundContainer = styled.div`
-  position: relative;
-  left: 0;
-  right: 0;
-  height: 300px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border-bottom: 5px solid #99ca3b;  
 `
 
 const ServicesContainer = styled.div`
+  display: inline-block;
   margin: 0 auto;
   max-width: 960px;
   padding: 0px 1.0875rem 1.45rem;
