@@ -16,6 +16,7 @@ const WelcomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 `
 
 const WelcomeTitle = styled.h2`

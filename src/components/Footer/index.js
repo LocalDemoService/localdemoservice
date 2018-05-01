@@ -18,10 +18,10 @@ const Footer = () => {
           <Link to={'/careers'}>Careers</Link>
         </FooterLinks>
         <FooterSocial>
-          <a href='https://facebook.com'><FaFacebookSquare size={50} svg /></a>
-          <a href=''><FaLinkedin size={50} svg /></a>
-          <a href=''><FaTwitter size={50} svg /></a>
-          <a href=''><FaInstagram size={50} svg /></a>
+          <a href='https://facebook.com'><FaFacebookSquare size={50} /></a>
+          <a href=''><FaLinkedin size={50} /></a>
+          <a href=''><FaTwitter size={50} /></a>
+          <a href=''><FaInstagram size={50} /></a>
         </FooterSocial>
       </FooterWidth>
     </FooterContainer>
@@ -40,10 +40,11 @@ const FooterContainer = styled.div`
 
   a {
     color: #333;
+    padding: 0 5px;
   }
 `
 const FooterWidth = styled.div`
-  width: 55%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

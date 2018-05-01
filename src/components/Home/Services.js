@@ -53,7 +53,7 @@ const Services = ({ data }) => {
 const BackgroundContainer = styled.div`
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  border-bottom: 5px solid #99ca3b;  
+  border-bottom: 5px solid #6dc8bf;  
 `
 
 const ServicesContainer = styled.div`
