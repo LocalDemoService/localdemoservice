@@ -51,6 +51,7 @@ const ContactFormWrapper = styled.div`
 
 const Title = styled.div`
   font-size: 2rem;
+  font-weight: 200; 
 `
 
 const Input = styled.div`
