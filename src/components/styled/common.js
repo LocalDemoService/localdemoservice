@@ -2,6 +2,105 @@ import React from 'react';
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+export const colors = (alpha) => {
+  return {
+    green: `rgba(153, 202, 59, ${alpha})`,
+    blue: `rgba(108, 200, 191, ${alpha})`,
+    brown: `rgba(134, 98, 46, ${alpha})`,
+    black: `rgba(51, 51, 51, ${alpha})`
+  }
+}
+
+export const HomePageWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+`
+
+const MultiColumnWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 960px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const MainColumn = styled.div`
+  flex: 3;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    width: 70%;
+  }
+`
+
+export const SideColumn = styled.div`
+  flex: 1
+  padding-top: 50px;
+`
+
+export const SubpageWrapper = (props) => <MultiColumnWrapper {...props} />
+
+
+
+const BorderTop = styled.div`
+  border-top: 4px solid ${props => props.color};
+`
+
+const BorderBottom = styled.div`
+  border-bottom: 4px solid ${props => props.color};
+`
+
+export const Border = ({ topColor, bottomColor, children }) => (
+  <div>
+    <BorderTop color={topColor} />
+    {children}
+    <BorderBottom color={bottomColor} />
+  </div>
+)
+
 export const SLink = styled(Link) `
   color: #fff;
+`
+
+export const Button = styled.button`
+  font-size: 1rem;
+  padding: 5px 15px;
+  margin: 5px auto;
+  background-color: ${colors(0.5).green};
+
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  color: ${colors(1).black};
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+  button:hover,
+  button:focus {
+    background: #0053ba;
+  }
+
+  button:focus {
+    outline: 1px solid #000;
+    outline-offset: -4px;
+  }
+
+  button:active {
+    transform: scale(0.99);
+  }
+
 `

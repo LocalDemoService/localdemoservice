@@ -5,61 +5,82 @@ import ohi from '../../images/ohi.png'
 import mauiFruit from '../../images/mauiFruit.png'
 import rawkin from '../../images/rawkin.png'
 import jem from '../../images/jem.png'
+import { HomePageWrapper, Border } from '../../components/styled/common'
+
 
 const partners = [
   {
     image: ahualoa,
-    testimonial: null
+    testimonial: {
+      text: null,
+      attribution: null
+    }
   },
   {
     image: ohi,
-    testimonial: 'Occaecat commodo eiusmod aliqua id...'
+    testimonial: {
+      text: `"Est aute minim ad tempor ipsum mollit Lorem. Aute et pariatur est nisi cillum Lorem esse."`,
+      attribution: `Culpa et do irure eu`
+    }
   },
   {
     image: mauiFruit,
-    testimonial: 'Id esse aliqua adipisicing fugiat est...'
+    testimonial: {
+      snippet: `It has been an honor working with Local Demo Service! They have achieved success for my business Maui Fruit Jewels`,
+      text: `"It has been an honor working with Local Demo Service! They have achieved success for my business Maui Fruit Jewels especially on Oahu. Plus they helped me to get the Hawaiian Seal of Quality for my products! Local Demo Service is a great entity for representing quality local products!"`,
+      attribution: `-Chris Ter Horst, Founder of Maui Fruit Jewels'`
+    }
   },
   {
     image: rawkin,
-    testimonial: null
+    testimonial: {
+      text: null,
+      attribution: null
+    }
   },
   {
     image: jem,
-    testimonial: null
+    testimonial: {
+      text: null,
+      attribution: null
+    }
   }
 ]
 
 const Partner = ({ image, testimonial }) => {
   return (
     <PartnerContainer>
-      <img src={image} greyscale />
-      <Testimonial>{testimonial}</Testimonial>
+      <PartnerImage>
+        <img src={image} />
+      </PartnerImage>
+      <Testimonial>
+        {testimonial.snippet && `${testimonial.snippet}...`}
+      </Testimonial>
     </PartnerContainer>
   )
 }
 
-const PartnerContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-itmes: flex-start;
-`
-
 const Partners = () => {
   return (
-    <BackgroundContainer>
-      <Title>Partners</Title>
-      <PartnersContainer>
-        {partners.map(p => <Partner image={p.image} testimonial={p.testimonial} key={p.image} />)}
-      </PartnersContainer>
-    </BackgroundContainer>
+    <Border topColor={'#33669944'} bottomColor={'rgba(108, 200, 191, 0.50)'}>
+      <BackgroundContainer>
+        <HomePageWrapper>
+          <Title>Partners</Title>
+          <PartnersContainer>
+            {partners.map(p =>
+              <Partner
+                image={p.image}
+                testimonial={p.testimonial}
+                key={p.image} />
+            )}
+          </PartnersContainer>
+        </HomePageWrapper>
+      </BackgroundContainer>
+    </Border>
   );
 };
 
 const BackgroundContainer = styled.div`
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  border-top: 5px solid #99ca3b;  
   background-color: rgba(108, 200, 191, 0.50); 
 `
 
@@ -68,32 +89,40 @@ const Title = styled.div`
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 25px;
+  padding-top: 25px;
 `
 
 const PartnersContainer = styled.div`
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 960px;
-
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+`
+
+const PartnerContainer = styled.div`
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+`
+
+const PartnerImage = styled.div`
+  display: flex;
+  height: 200px;
 
   img {
-    width: 150px;
+    width: 200px;
     align-self: center;
   }
 `
 
 const Testimonial = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 100;
+  width: 50%;
 `
+
+
 
 export default Partners;

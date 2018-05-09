@@ -65,14 +65,19 @@ const FooterLinks = styled.div`
   border-left: 2px solid #333;
   border-right: 2px solid #333;
   margin: 0 25px;
-`
+  `
 
 const FooterSocial = styled.div`
   flex: 1;
-  fisplay: flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 5px 15px;
+
+  @media (max-width: 480px) {
+    font-size: 10px;  
+  }
 `
 
 

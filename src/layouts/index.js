@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children, data, location }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: `${data.site.siteMetadata.description}` },
-        { name: 'keywords', content: 'tester, tester123' },
+        { name: 'keywords', content: 'Local Demo Service, Product Demos In Your Store' },
       ]}
     />
     <Header data={data} location={location} />
@@ -29,12 +29,10 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export const Content = styled.div.attrs({ className: 'avenir' }) `
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem;
-  padding-top: 0;
+export const Content = styled.div`
+  
 `
+
 export const query = graphql`
 query LayoutQuery {
   site {

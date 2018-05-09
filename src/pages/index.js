@@ -1,18 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PostListing from '../components/Posts/PostListing'
 import Services from '../components/Home/Services'
 import Welcome from '../components/Home/Welcome'
 import Partners from '../components/Home/Partners'
+import { HomePageWrapper } from '../components/styled/common'
 
 const IndexPage = ({ data }) => {
   console.log(data)
   return (
-    <div>
+    <React.Fragment>
       <Services data={data} />
       <Welcome />
       <Partners data={data} />
-    </div>
+    </React.Fragment>
   )
 }
 

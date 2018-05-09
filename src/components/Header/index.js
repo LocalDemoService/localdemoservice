@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import { HomePageWrapper, Border, colors } from '../../components/styled/common'
 
 
 class Header extends Component {
@@ -12,6 +13,15 @@ class Header extends Component {
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
+        <Img
+          sizes={data.background.sizes}
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            opacity: 0.3,
+          }} />
         <HeaderBody>
           <h1>
             <Link
@@ -27,79 +37,67 @@ class Header extends Component {
               {data.site.siteMetadata.title}
             </Link>
           </h1>
+          <TopMargin marginTop={75}>
+            <Border
+              topColor={`${colors(0.5).black}`}
+              bottomColor={`${colors(0.5).black}`} >
+              <HomePageWrapper>
+                <MainNav>
+                  <Link to='/'>Home</Link>
+                  <Link to={'/about'}>About</Link>
+                  <Link to={'/blog'}>Blog</Link>
+                  <Link to={'/locations'}>Locations</Link>
+                  <Link to={'/team'}>Meet The Team</Link>
+                  <Link to={'/careers'}>Careers</Link>
+                  <Link to={'/contact'}>Contact Us</Link>
+                </MainNav>
+              </HomePageWrapper>
+            </Border>
+          </TopMargin>
         </HeaderBody>
-        <Img
-          sizes={data.background.sizes}
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: 0,
-            width: '100%',
-            opacity: 0.3
-          }} />
-        <MainNav>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to={'/about'}>About</Link></li>
-            <li><Link to={'/blog'}>Blog</Link></li>
-            <li><Link to={'/locations'}>Locations</Link></li>
-            <li><Link to={'/team'}>Meet The Team</Link></li>
-            <li><Link to={'/careers'}>Careers</Link></li>
-            <li><Link to={'/contact'}>Contact Us</Link></li>
-          </ul>
-        </MainNav>
       </HeaderContainer>
 
     );
   }
 }
 
-const HeaderContainer = styled.div.attrs({ className: 'avenir' }) `
-  height: 300px;
-  margin-top: -25px;
+const HeaderContainer = styled.div`
   background-color: #333;
-
+  padding-bottom: 20px;
   h1 {
+    margin: 0;
     padding-top: 50px;
     text-align: center;
     font-weight: normal;
-    font-size: 3rem;
-    color: #336699;
-  }
-`
-
-const MainNav = styled.nav`
-  margin-top: 50px;
-  padding: 10px 0;
-  border-top: 4px solid #000;
-  border-bottom: 4px solid #000;
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-
-    li {
-      z-index: 5;
-      margin-left: 10px;
-
-      a {
-            text-decoration: none;
-        color: #fff;
-
-        &:hover {
-            border-bottom: 1px solid #999;
-        }
-      }
-    }
   }
 `
 
 const HeaderBody = styled.div`
-  max-width: 960px;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  margin-bottom: 75px;
 `
 
+
+const MainNav = styled.nav`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 25px 0;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      border-bottom: 1px solid #999;
+    }
+  }
+`
+
+const TopMargin = styled.div`
+  margin-top: ${props => props.marginTop}px;
+`
 
 export default Header

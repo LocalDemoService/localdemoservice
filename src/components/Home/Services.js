@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { HomePageWrapper, Border } from '../styled/common'
 
 const services = [
   {
@@ -37,34 +38,34 @@ const Service = ({ name, image }) => {
 const Services = ({ data }) => {
   console.log(data)
   return (
-    <BackgroundContainer style={{ backgroundImage: `url(${data.bgImage.sizes.src})` }}>
-      <ServicesContainer>
-        {services.map(service => (
-          <Service
-            key={service.name + service.image}
-            name={service.name}
-            image={data[service.image]} />
-        ))}
-      </ServicesContainer>
-    </BackgroundContainer>
+    <Border topColor={'#336699ff'} bottomColor={'#6dc8bf'}>
+      <BackgroundContainer style={{ backgroundImage: `url(${data.bgImage.sizes.src})` }}>
+        <HomePageWrapper>
+          <ServicesContainer>
+            {services.map(service => (
+              <Service
+                key={service.name + service.image}
+                name={service.name}
+                image={data[service.image]} />
+            ))}
+          </ServicesContainer>
+        </HomePageWrapper>
+      </BackgroundContainer>
+    </Border>
   );
 };
 
-const BackgroundContainer = styled.div`
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  border-bottom: 5px solid #6dc8bf;  
+// margin-left: calc(50% - 50vw);
+// margin-right: calc(50% - 50vw);
+const BackgroundContainer = styled.div`  
 `
 
 const ServicesContainer = styled.div`
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 75px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 50px 0;
 `
 
 const ServiceContainer = styled.div`
