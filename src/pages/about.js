@@ -1,6 +1,6 @@
 import React from 'react';
 import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
-import Contact from '../components/Forms/contact'
+import Contact from '../components/Forms/Contact'
 
 const About = () => {
   return (
