@@ -97,7 +97,10 @@ export const Button = styled.button`
   button:focus {
     outline: 1px solid #000;
     outline-offset: -4px;
-  }
+  }  font-size: 1rem;
+  padding: 5px 15px;
+  margin: 5px auto;
+  background-color: ${colors(0.5).green};
 
   button:active {
     transform: scale(0.99);
@@ -105,6 +108,36 @@ export const Button = styled.button`
 
 `
 
-export const Title = styled.h1`
-  font-weight: 200;
+export const Title = styled.div`
+  font-size: 2rem;
+  font-weight: 200; 
 `
+
+export const Input = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0;
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1.25rem;
+  }
+`
+
+const InputFileStyle = styled.input`
+
+
+  font-size: 1rem;
+  padding: 5px 15px;
+  margin: 5px auto;
+  background-color: ${colors(0.5).green};
+
+`
+
+export const InputStyle = (props) => (
+  <InputFileStyle>
+    {props.children}
+  </InputFileStyle>
+)

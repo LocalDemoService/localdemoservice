@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
-import { Button } from '../styled/common'
+import { Button, Input, Title } from '../styled/common'
 
 class Contact extends Component {
   render() {
     return (
       <ContactFormWrapper>
         <Title>Contact Us</Title>
+        <div>{this.props.children}</div>
         <form
           name="contact"
           method="post"
@@ -47,24 +48,6 @@ const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px 0;
-`
-
-const Title = styled.div`
-  font-size: 2rem;
-  font-weight: 200; 
-`
-
-const Input = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 3px 0;
-  label {
-    font-size: 1rem;
-  }
-
-  input {
-    font-size: 1.25rem;
-  }
 `
 
 export default Contact

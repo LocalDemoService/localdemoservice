@@ -86,7 +86,6 @@ const BackgroundContainer = styled.div`
 
 const Title = styled.div`
   font-size: 34px;
-  font-weight: 100;
   text-align: center;
   text-transform: uppercase;
   padding-top: 25px;
@@ -118,9 +117,8 @@ const PartnerImage = styled.div`
 
 const Testimonial = styled.div`
   color: #333;
-  font-size: 12px;
-  font-weight: 100;
-  width: 50%;
+  font-size: 14px;
+  width: 65%;
 `
 
 

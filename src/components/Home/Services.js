@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { HomePageWrapper, Border } from '../styled/common'
@@ -36,7 +36,6 @@ const Service = ({ name, image }) => {
 }
 
 const Services = ({ data }) => {
-  console.log(data)
   return (
     <Border topColor={'#336699ff'} bottomColor={'#6dc8bf'}>
       <BackgroundContainer style={{ backgroundImage: `url(${data.bgImage.sizes.src})` }}>
@@ -52,8 +51,8 @@ const Services = ({ data }) => {
         </HomePageWrapper>
       </BackgroundContainer>
     </Border>
-  );
-};
+  )
+}
 
 // margin-left: calc(50% - 50vw);
 // margin-right: calc(50% - 50vw);
@@ -77,4 +76,4 @@ const ServiceTitle = styled.div`
   margin-top: 5px;  
 `
 
-export default Services;
+export default Services

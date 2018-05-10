@@ -20,13 +20,15 @@ const WelcomeContainer = styled.div`
 `
 
 const WelcomeTitle = styled.h2`
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 3.25rem;
 `
 
 const WelcomeText = styled.div`  
   text-align: center;
-  width: 34em;
+  max-width: 34em;
+  font-size: larger;
+  font-weight: 300;
 `
 
 export default Welcome;

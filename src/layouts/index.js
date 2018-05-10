@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import 'typeface-lato'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'

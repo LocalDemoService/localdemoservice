@@ -5,6 +5,36 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { HomePageWrapper, Border, colors } from '../../components/styled/common'
 
+const nav = [
+  {
+    name: 'Home',
+    path: '/'
+  },
+  {
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Blog',
+    path: '/blog'
+  },
+  {
+    name: 'Locations',
+    path: '/locations'
+  },
+  {
+    name: 'Meet The Team',
+    path: '/team'
+  },
+  {
+    name: 'Careers',
+    path: '/careers'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
+  },
+]
 
 class Header extends Component {
 
@@ -43,21 +73,21 @@ class Header extends Component {
               bottomColor={`${colors(0.5).black}`} >
               <HomePageWrapper>
                 <MainNav>
-                  <Link to='/'>Home</Link>
-                  <Link to={'/about'}>About</Link>
-                  <Link to={'/blog'}>Blog</Link>
-                  <Link to={'/locations'}>Locations</Link>
-                  <Link to={'/team'}>Meet The Team</Link>
-                  <Link to={'/careers'}>Careers</Link>
-                  <Link to={'/contact'}>Contact Us</Link>
+                  {nav.map(n => (
+                    <Link
+                      exact
+                      activeStyle={{ borderBottom: `1px solid ${colors(1).green}` }}
+                      to={n.path}>
+                      {n.name}
+                    </Link>
+                  ))}
                 </MainNav>
               </HomePageWrapper>
             </Border>
           </TopMargin>
         </HeaderBody>
       </HeaderContainer>
-
-    );
+    )
   }
 }
 
@@ -85,12 +115,17 @@ const MainNav = styled.nav`
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 25px 0;
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
     color: #fff;
 
     &:hover {
+      border-bottom: 1px solid #999;
+    }
+    &:active {
+      color: #336699;
       border-bottom: 1px solid #999;
     }
   }
