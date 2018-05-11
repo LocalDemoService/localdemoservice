@@ -50,7 +50,7 @@ class Header extends Component {
             left: 0,
             top: 0,
             width: '100%',
-            opacity: 0.3,
+            opacity: 0.7,
           }} />
         <HeaderBody>
           <h1>
@@ -75,6 +75,7 @@ class Header extends Component {
                 <MainNav>
                   {nav.map(n => (
                     <Link
+                      key={n.path}
                       exact
                       activeStyle={{ borderBottom: `1px solid ${colors(1).green}` }}
                       to={n.path}>

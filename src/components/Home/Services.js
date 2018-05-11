@@ -9,12 +9,12 @@ const services = [
     image: 'demo'
   },
   {
-    name: 'Brokerage',
-    image: 'handshake'
+    name: 'Tandem Demos',
+    image: 'shelves'
   },
   {
-    name: 'Product Shifts',
-    image: 'shelves'
+    name: 'Brokerage',
+    image: 'handshake'
   },
   {
     name: 'Merchandising',
