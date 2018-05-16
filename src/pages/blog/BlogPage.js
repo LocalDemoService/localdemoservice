@@ -6,7 +6,6 @@ class BlogPage extends Component {
     const { data } = this.props;
     return (
       <div>
-        <Date>{data.markdownRemark.frontmatter.date}</Date>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <div
           dangerouslySetInnerHTML={{
@@ -23,11 +22,10 @@ export default BlogPage;
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         title
-        date(formatString: "dddd, MMMM DD YYYY")
       }
+      html
     }
   }
 `;
