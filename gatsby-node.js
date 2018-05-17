@@ -12,7 +12,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     createNodeField({
       node,
       name: "slug",
-      value: `/blog${slug}`
+      value: `/posts${slug}`
     });
   }
 };
@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve("./src/pages/blog/BlogPage.js"),
+            component: path.resolve("./src/posts/BlogPage.js"),
             context: {
               slug: node.fields.slug
             }

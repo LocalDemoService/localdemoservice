@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { SubpageWrapper, MainColumn, SideColumn, Title } from '../../components/styled/common'
-import Contact from '../../components/Forms/Contact'
+import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
+import Contact from '../components/Forms/Contact'
 
 class BlogPage extends Component {
   render() {
@@ -11,6 +11,9 @@ class BlogPage extends Component {
       <SubpageWrapper>
         <MainColumn>
           <Title>{data.markdownRemark.frontmatter.title}</Title>
+          <div dangerouslySetInnerHTML={{
+            __html: data.markdownRemark.html
+          }}></div>
         </MainColumn>
         <SideColumn>
           <Contact />
