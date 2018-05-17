@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-export const colors = (alpha) => {
+export const colors = (alpha = 1) => {
   return {
     green: `rgba(153, 202, 59, ${alpha})`,
     blue: `rgba(108, 200, 191, ${alpha})`,
@@ -31,6 +31,7 @@ const MultiColumnWrapper = styled.div`
 
 export const MainColumn = styled.div`
   flex: 3;
+  margin-top: 50px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;

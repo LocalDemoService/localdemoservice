@@ -6,7 +6,6 @@ import Partners from '../components/Home/Partners'
 import { HomePageWrapper } from '../components/styled/common'
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return (
     <React.Fragment>
       <Services data={data} />
