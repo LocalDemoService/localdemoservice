@@ -7,12 +7,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: "pages/blog/"
+      basePath: "pages/blog"
     });
     createNodeField({
       node,
       name: "slug",
-      value: `/pages/blog/${slug}`
+      value: `/blog${slug}`
     });
   }
 };
@@ -33,17 +33,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-      console.log(result);
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve("./src/pages/blog/BlogPage.js"),
-          context: {
-            slug: node.fields.slug
-          }
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve("./src/pages/blog/BlogPage.js"),
+            context: {
+              slug: node.fields.slug
+            }
+          });
         });
+        resolve();
       });
-      resolve();
-    });
   });
 };
