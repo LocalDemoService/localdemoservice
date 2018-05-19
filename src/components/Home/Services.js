@@ -1,28 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { HomePageWrapper, Border } from '../styled/common'
+import Link from 'gatsby-link'
+import { HomePageWrapper, Border, SLink, colors } from '../styled/common'
 
 const services = [
   {
     name: 'Product Demonstration',
-    image: 'demo'
+    image: 'demo',
+    url: '/product-demonstration'
   },
   {
     name: 'Tandem Demos',
-    image: 'shelves'
+    image: 'shelves',
+    url: '/tandem-demos'
   },
   {
     name: 'Brokerage',
-    image: 'handshake'
+    image: 'handshake',
+    url: '/brokerage'
   },
   {
     name: 'Merchandising',
-    image: 'coffeeShelf'
+    image: 'coffeeShelf',
+    url: '/merchandising'
   },
   {
     name: 'Marketing & Sales Consultation',
-    image: 'marketing'
+    image: 'marketing',
+    url: '/marketing'
   }
 ]
 
@@ -42,10 +48,12 @@ const Services = ({ data }) => {
         <HomePageWrapper>
           <ServicesContainer>
             {services.map(service => (
-              <Service
-                key={service.name + service.image}
-                name={service.name}
-                image={data[service.image]} />
+              <SLink to={service.url}>
+                <Service
+                  key={service.name + service.image}
+                  name={service.name}
+                  image={data[service.image]} />
+              </SLink>
             ))}
           </ServicesContainer>
         </HomePageWrapper>

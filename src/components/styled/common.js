@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
 
 export const colors = (alpha = 1) => {
   return {
@@ -8,13 +8,23 @@ export const colors = (alpha = 1) => {
     blue: `rgba(108, 200, 191, ${alpha})`,
     brown: `rgba(134, 98, 46, ${alpha})`,
     black: `rgba(51, 51, 51, ${alpha})`
-  }
-}
+  };
+};
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const HomePageWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-`
+`;
 
 const MultiColumnWrapper = styled.div`
   display: flex;
@@ -27,36 +37,35 @@ const MultiColumnWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`
+`;
 
 export const MainColumn = styled.div`
   flex: 3;
   margin-top: 50px;
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   p {
     width: 70%;
   }
-`
+`;
 
 export const SideColumn = styled.div`
   flex: 1
   padding-top: 50px;
-`
+`;
 
-export const SubpageWrapper = (props) => <MultiColumnWrapper {...props} />
-
-
+export const SubpageWrapper = props => <MultiColumnWrapper {...props} />;
 
 const BorderTop = styled.div`
   border-top: 4px solid ${props => props.color};
-`
+`;
 
 const BorderBottom = styled.div`
   border-bottom: 4px solid ${props => props.color};
-`
+`;
 
 export const Border = ({ topColor, bottomColor, children }) => (
   <div>
@@ -64,11 +73,17 @@ export const Border = ({ topColor, bottomColor, children }) => (
     {children}
     <BorderBottom color={bottomColor} />
   </div>
-)
+);
 
 export const SLink = styled(Link) `
-  color: #fff;
-`
+  color: ${colors().black};
+  text-decoration: none;
+
+  &:hover {
+    color: ${colors().blue};
+    text-decoration: underline;
+  }
+`;
 
 export const Button = styled.button`
   font-size: 1rem;
@@ -84,11 +99,9 @@ export const Button = styled.button`
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out, 
-              transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-
 
   button:hover,
   button:focus {
@@ -98,7 +111,8 @@ export const Button = styled.button`
   button:focus {
     outline: 1px solid #000;
     outline-offset: -4px;
-  }  font-size: 1rem;
+  }
+  font-size: 1rem;
   padding: 5px 15px;
   margin: 5px auto;
   background-color: ${colors(0.5).green};
@@ -106,13 +120,14 @@ export const Button = styled.button`
   button:active {
     transform: scale(0.99);
   }
-
-`
+`;
 
 export const Title = styled.div`
   font-size: 2rem;
-  font-weight: 200; 
-`
+  font-weight: 200;
+  padding-bottom: 25px;
+  align-self: center;
+`;
 
 export const Input = styled.div`
   display: flex;
@@ -125,20 +140,13 @@ export const Input = styled.div`
   input {
     font-size: 1.25rem;
   }
-`
+`;
 
 const InputFileStyle = styled.input`
-
-
   font-size: 1rem;
   padding: 5px 15px;
   margin: 5px auto;
   background-color: ${colors(0.5).green};
+`;
 
-`
-
-export const InputStyle = (props) => (
-  <InputFileStyle>
-    {props.children}
-  </InputFileStyle>
-)
+export const InputStyle = props => <InputFileStyle>{props.children}</InputFileStyle>;

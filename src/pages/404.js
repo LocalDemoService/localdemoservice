@@ -1,10 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { SubpageWrapper, MainColumn, SideColumn, Title, SLink } from '../components/styled/common'
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+import Contact from '../components/Forms/Contact'
 
-export default NotFoundPage
+const About = () => {
+  return (
+    <SubpageWrapper>
+      <MainColumn>
+        <Title>Hmm, something went wrong&hellip;</Title>
+        <p>The page you're looking for doesn't exists. Let's get you <SLink to={'/'}>Home</SLink></p>
+      </MainColumn>
+      <SideColumn>
+        <Contact />
+      </SideColumn>
+    </SubpageWrapper>
+  );
+};
+
+export default About;
