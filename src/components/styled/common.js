@@ -7,7 +7,8 @@ export const colors = (alpha = 1) => {
     green: `rgba(153, 202, 59, ${alpha})`,
     blue: `rgba(108, 200, 191, ${alpha})`,
     brown: `rgba(134, 98, 46, ${alpha})`,
-    black: `rgba(51, 51, 51, ${alpha})`
+    black: `rgba(51, 51, 51, ${alpha})`,
+    transparent: `rgba(0, 0, 0, 0)`
   };
 };
 

@@ -9,7 +9,10 @@ const Blog = ({ data }) => {
   return (
     <SubpageWrapper>
       <MainColumn>
-        <PostContainer>{data.allMarkdownRemark.edges.map(({ node }) => <PostListing key={node.fields.slug} post={node} />)}</PostContainer>
+        <PostContainer>
+          {data.allMarkdownRemark.edges.map(({ node }) =>
+            <PostListing key={node.fields.slug} post={node} />)}
+        </PostContainer>
       </MainColumn>
       <SideColumn>
         <Contact />
