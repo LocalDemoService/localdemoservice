@@ -120,6 +120,7 @@ const Testimonial = styled.div`
   color: #333;
   font-size: 14px;
   width: 65%;
+  text-transform: italic;
 `
 
 

@@ -1,27 +1,28 @@
 import React from 'react';
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import { SLink } from '../styled/common'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/lib/fa'
+
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterWidth>
         <FooterContact>
-          <a href='tel:808-722-5492'>808-722-5492</a>
-          <a href='mailto:info@localdemoservice.com'>info@localdemoservice.com</a>
+          <SLink to={'tel:808-722-5492'}>808-722-5492</SLink>
+          <SLink to={'/contact'}>Message Us</SLink>
         </FooterContact>
         <FooterLinks>
-          <Link to={'/about'}>About</Link>
-          <Link to={'/locations'}>Locations</Link>
-          <Link to={'/meet-the-team'}>Meet The Team</Link>
-          <Link to={'/careers'}>Careers</Link>
+          <SLink to={'/about'}>About</SLink>
+          <SLink to={'/locations'}>Locations</SLink>
+          <SLink to={'/meet-the-team'}>Meet The Team</SLink>
+          <SLink to={'/careers'}>Careers</SLink>
         </FooterLinks>
         <FooterSocial>
-          <a href='https://facebook.com'><FaFacebookSquare size={50} /></a>
-          <a href=''><FaLinkedin size={50} /></a>
-          <a href=''><FaTwitter size={50} /></a>
-          <a href=''><FaInstagram size={50} /></a>
+          <SLink to={'https://www.facebook.com/LocalDemoService'}><FaFacebookSquare size={50} /></SLink>
+          <SLink to={'https://www.linkedin.com/company/local-demo-service/'}><FaLinkedin size={50} /></SLink>
+          <SLink to={''}><FaTwitter size={50} /></SLink>
+          <SLink to={'https://www.instagram.com/localdemoservice/'}><FaInstagram size={50} /></SLink>
         </FooterSocial>
       </FooterWidth>
     </FooterContainer>

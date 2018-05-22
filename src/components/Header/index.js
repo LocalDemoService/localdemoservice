@@ -40,26 +40,27 @@ class Header extends Component {
 
   render() {
     const { data } = this.props
-    console.log(data.background.sizes.src)
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
         <BackgroundContainer backgroundImage={data.background.sizes.src}>
           <HeaderBody>
-            <h1>
+            <Image sizes={data.logo.sizes} />
+            <HeaderLink style={{ marginTop: -50 }}>
               <Link
                 to="/"
                 style={{
                   color: '#fff',
-                  textShadow: `1px 1px 1px #999, 
+                  textShadow: `1px 1px 1px #ccc,
                   3px 3px 5px #777`,
+                  fontSize: '3rem',
                   textDecoration: 'none',
                   letterSpacing: '1rem',
-                  fontWeight: 100
+                  fontWeight: 100,
                 }} >
                 {data.site.siteMetadata.title}
               </Link>
-            </h1>
+            </HeaderLink>
             <TopMargin marginTop={75}>
               <Border
                 topColor={`${colors(0.5).black}`}
@@ -104,8 +105,18 @@ const HeaderBody = styled.div`
   margin: 0 auto;
   position: relative;
   padding-bottom: 50px;
+  padding-top: 50px;
 `
 
+const Image = styled(Img) `
+  width: 250px;
+  margin: 0 auto;
+`
+
+const HeaderLink = styled.h1`
+  padding: 0;
+  margin-top: -50px;
+`
 
 const MainNav = styled.nav`
   display: flex;
