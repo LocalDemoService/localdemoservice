@@ -41,7 +41,7 @@ const MultiColumnWrapper = styled.div`
 `;
 
 export const MainColumn = styled.div`
-  flex: 3;
+  flex: 4;
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -54,7 +54,7 @@ export const MainColumn = styled.div`
 `;
 
 export const SideColumn = styled.div`
-  flex: 1
+  flex: 1;
   padding-top: 50px;
 `;
 

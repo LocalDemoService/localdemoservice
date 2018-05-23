@@ -21,7 +21,7 @@ const Footer = () => {
         <FooterSocial>
           <SLink to={'https://www.facebook.com/LocalDemoService'}><FaFacebookSquare size={50} /></SLink>
           <SLink to={'https://www.linkedin.com/company/local-demo-service/'}><FaLinkedin size={50} /></SLink>
-          <SLink to={''}><FaTwitter size={50} /></SLink>
+          <SLink to={'https://twitter.com/LocalDemoServic'}><FaTwitter size={50} /></SLink>
           <SLink to={'https://www.instagram.com/localdemoservice/'}><FaInstagram size={50} /></SLink>
         </FooterSocial>
       </FooterWidth>

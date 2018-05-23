@@ -40,6 +40,7 @@ class Header extends Component {
 
   render() {
     const { data } = this.props
+    console.log(data);
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
@@ -56,15 +57,16 @@ class Header extends Component {
                   fontSize: '3rem',
                   textDecoration: 'none',
                   letterSpacing: '1rem',
-                  fontWeight: 100,
+                  fontWeight: 300,
                 }} >
                 {data.site.siteMetadata.title}
               </Link>
             </HeaderLink>
-            <TopMargin marginTop={75}>
+            <div style={{ marginTop: 50, backgroundColor: `${colors(0.7).black}` }}>
               <Border
                 topColor={`${colors(0.5).black}`}
-                bottomColor={`${colors(0.5).black}`} >
+                bottomColor={`${colors(0.5).black}`}
+                style={{ backgroundColor: `#336699` }} >
                 <HomePageWrapper>
                   <MainNav>
                     {nav.map(n => (
@@ -79,7 +81,7 @@ class Header extends Component {
                   </MainNav>
                 </HomePageWrapper>
               </Border>
-            </TopMargin>
+            </div>
           </HeaderBody>
         </BackgroundContainer>
       </HeaderContainer>
@@ -128,14 +130,10 @@ const MainNav = styled.nav`
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: white;
 
     &:hover {
-      border-bottom: 1px solid #999;
-    }
-    &:active {
-      color: #336699;
-      border-bottom: 1px solid #999;
+      border-bottom: 1px solid ${colors(0.5).green};
     }
   }
 `

@@ -5,6 +5,8 @@ import ohi from '../../images/ohi.png'
 import mauiFruit from '../../images/mauiFruit.png'
 import rawkin from '../../images/rawkin.png'
 import jem from '../../images/jem.png'
+import rusty from '../../images/rustys-hawaiian.png'
+import alterEco from '../../images/alter-eco.jpg'
 import { HomePageWrapper, Border, colors } from '../../components/styled/common'
 
 
@@ -41,6 +43,20 @@ const partners = [
   },
   {
     image: jem,
+    testimonial: {
+      text: null,
+      attribution: null
+    }
+  },
+  {
+    image: rusty,
+    testimonial: {
+      text: null,
+      attribution: null
+    }
+  },
+  {
+    image: alterEco,
     testimonial: {
       text: null,
       attribution: null
