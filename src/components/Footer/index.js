@@ -5,10 +5,10 @@ import { SLink } from '../styled/common'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/lib/fa'
 
 
-const Footer = ({logoSmall}) => {
+const Footer = ({ logoSmall }) => {
   return (
     <FooterContainer>
-    <Logo sizes={logoSmall} />
+      <Logo sizes={logoSmall.sizes} style={{position: 'absolute', left: 15}}  />
       <FooterWidth>
         <FooterContact>
           <SLink to={'tel:808-722-5492'}>808-722-5492</SLink>
@@ -56,9 +56,9 @@ const FooterWidth = styled.div`
 `
 
 const Logo = styled(Img)`
-  align-self: flex-start;
-  height: 100%;
-  widht: 150px;
+margin-top: -55px;
+  height: 7rem;
+  width: 7rem;
 `
 
 const FooterContact = styled.div`
