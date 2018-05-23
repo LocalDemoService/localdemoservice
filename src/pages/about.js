@@ -1,5 +1,7 @@
 import React from 'react';
-import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import { SubpageWrapper, MainColumn, SideColumn, Title, SLink, colors } from '../components/styled/common'
 import Contact from '../components/Forms/Contact'
 
 const About = () => {
@@ -7,9 +9,15 @@ const About = () => {
     <SubpageWrapper>
       <MainColumn>
         <Title>About Local Demo Service</Title>
-        <p>Adipisicing cillum consectetur aliquip elit sit est. Dolore labore ex nostrud ea do pariatur dolore. Eiusmod tempor voluptate id duis amet et duis excepteur elit mollit.</p>
-        <p>Fugiat nulla occaecat Lorem magna laborum excepteur et laborum commodo commodo mollit occaecat veniam quis. Ipsum excepteur velit mollit cillum fugiat enim mollit qui quis. Exercitation non voluptate et occaecat cillum aute eu irure velit culpa id proident qui. Minim quis amet amet consectetur in nisi officia adipisicing cillum exercitation minim. Commodo ipsum fugiat fugiat consequat eu consequat nostrud tempor non exercitation incididunt consectetur officia excepteur. Anim consequat irure reprehenderit occaecat aliqua anim commodo do in irure in. Commodo pariatur nostrud eiusmod proident non labore deserunt enim.</p>
-        <p>Sunt laboris laboris labore et ad enim in veniam nisi irure. Amet culpa id occaecat nulla eiusmod aute consequat. Officia ipsum elit minim consectetur labore sunt pariatur velit fugiat qui eu ullamco aliqua sit. Est consequat nulla ipsum ut.</p>
+        <p>
+          Local Demo Service started in November of 2015 serving local Hawaiian grown beverages at farmers markets to support inter-island sustainability. Hawaii imports approximately 90% of all consumable goods so our mission was to get local products into local peoples hands at all costs. Our local Hawaiian producers expressed a need for demos at grocery outlets, so we began sampling Kau coffee, Big Island Macadamia nuts, and other local Hawaiian products at Whole Foods and other health food stores. Entering the grocery industry, we found a lack of sustainable trends: Food travels approximately 1500 miles from farm to plate
+          <SourceLink to='https://cuesa.org/learn/how-far-does-your-food-travel-get-your-plate'> (Source)</SourceLink>
+          , Organic food sales only account for a mere 5.3% of the food sales in the United States as of 2017
+          <SourceLink to='https://www.ota.com/resources/market-analysis'> (Source)</SourceLink>
+          , the vast majority of food packaging is not recycled
+          <SourceLink to='https://www.theguardian.com/environment/2017/mar/13/waste-plastic-food-packaging-recycling-throwaway-culture-dave-hall'> (Source)</SourceLink>
+          , etc. Our findings lead us to our purpose: to support local, Organic, recycled, charity based, healthy, and/or other sustainably focused products to build a more sustainable and forward thinking food economy.
+        </p>
       </MainColumn>
       <SideColumn>
         <Contact />
@@ -17,5 +25,9 @@ const About = () => {
     </SubpageWrapper>
   );
 };
+
+const SourceLink = styled(SLink) `
+  color: ${colors().blue}
+`
 
 export default About;

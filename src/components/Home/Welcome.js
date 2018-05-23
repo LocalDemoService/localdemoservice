@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <WelcomeContainer>
       <WelcomeTitle>Welcome</WelcomeTitle>
-      <WelcomeText>Sustainable eating is the key to a healthy world. Local demo Service provides on-site marketing and sales for sustainable products at retail outlets across the U.S. including Hawaii, Idaho, Washington, and California. If your products are sustainable and healthy, and yoa are interested in marketing; please contact us for more information!</WelcomeText>
+      <WelcomeText>Sustainable eating is the key to a healthy world. Local demo Service provides on-site marketing and sales for sustainable products at retail outlets across the U.S. including Hawaii, Idaho, Washington, California, New Mexico, and Colorado. If you are interested in converting shoppers into long term buyers of your sustainable healthy products, please contact us for more information!</WelcomeText>
     </WelcomeContainer>
   );
 };

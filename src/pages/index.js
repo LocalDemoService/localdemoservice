@@ -26,35 +26,34 @@ export const query = graphql`
       }
     }
     demo: imageSharp(id: { regex: "/demo.jpg/" }) {
-      sizes(maxWidth: 250) {
+      sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
-    },
+    }
     handshake: imageSharp(id: { regex: "/handshake.jpg/" }) {
-      sizes(maxWidth: 250) {
+      sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
-    },
+    }
     shelves: imageSharp(id: { regex: "/shelves.jpg/" }) {
-      sizes(maxWidth: 250) {
+      sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
-    },
+    }
     coffeeShelf: imageSharp(id: { regex: "/coffeeShelf.jpg/" }) {
-      sizes(maxWidth: 250) {
+      sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
-    },
+    }
     marketing: imageSharp(id: { regex: "/marketing.jpg/" }) {
-      sizes(maxWidth: 250) {
+      sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
-    },
+    }
     bgImage: imageSharp(id: { regex: "/bg-tile.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }
-    },
-    
+    }
   }
 `

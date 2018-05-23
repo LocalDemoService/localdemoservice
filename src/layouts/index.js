@@ -38,12 +38,12 @@ export const query = graphql`
 query LayoutQuery {
   site {
     siteMetadata {
-      title
+      title 
       description
     }
   }
   background: imageSharp(id: { regex: "/background.jpg/" }) {
-    sizes(maxWidth: 1240) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }) {
       ...GatsbyImageSharpSizes
     }
   }

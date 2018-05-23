@@ -40,6 +40,7 @@ class Header extends Component {
 
   render() {
     const { data } = this.props
+    console.log(data);
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>

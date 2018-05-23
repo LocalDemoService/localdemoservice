@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
+import { SubpageWrapper, MainColumn, SideColumn, Column, Title } from '../components/styled/common'
 import Contact from '../components/Forms/Contact'
 
 class BlogPage extends Component {
@@ -10,11 +10,13 @@ class BlogPage extends Component {
     return (
       <SubpageWrapper>
         <MainColumn>
-          <Title>{data.markdownRemark.frontmatter.title}</Title>
-          <Date>{data.markdownRemark.frontmatter.date}</Date>
-          <div dangerouslySetInnerHTML={{
-            __html: data.markdownRemark.html
-          }}></div>
+          <FlexStart>
+            <Title>{data.markdownRemark.frontmatter.title}</Title>
+            <Date>{data.markdownRemark.frontmatter.date}</Date>
+            <div dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html
+            }}></div>
+          </FlexStart>
         </MainColumn>
         <SideColumn>
           <Contact />
@@ -23,6 +25,12 @@ class BlogPage extends Component {
     );
   }
 }
+
+const FlexStart = styled(Column) `
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+`
 
 export default BlogPage;
 
