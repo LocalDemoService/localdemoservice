@@ -1,12 +1,21 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
+import { SLink } from '../styled/common'
 
 const PostListing = ({ post }) => (
-  <article>
-    <h3><Link to={post.fields.slug}>{post.frontmatter.title}</Link></h3>
+  <Article>
+    <h3>
+      <SLink to={post.fields.slug}>{post.frontmatter.title}</SLink>
+    </h3>
     <span>{post.frontmatter.date}</span>
     <p>{post.excerpt}</p>
-  </article>
-)
+    <hr />
+  </Article>
+);
 
-export default PostListing
+const Article = styled.article`
+  padding: 15px 50px;
+`;
+
+export default PostListing;

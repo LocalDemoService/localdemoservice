@@ -1,16 +1,18 @@
-import React from 'react';
-import styled from 'styled-components'
-import Link from 'gatsby-link'
-import { Title, SubpageWrapper, MainColumn, SideColumn, Border, colors } from '../../components/styled/common'
-import Contact from '../../components/Forms/Contact'
-import PostListing from '../../components/Posts/PostListing'
-
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
+import { Title, SubpageWrapper, MainColumn, SideColumn, Border, colors } from "../../components/styled/common";
+import Contact from "../../components/Forms/Contact";
+import PostListing from "../../components/Posts/PostListing";
 
 const Blog = ({ data }) => {
   return (
     <SubpageWrapper>
       <MainColumn>
-        {data.allMarkdownRemark.edges.map(({ node }) => <PostListing post={node} />)}
+        <PostContainer>
+          {data.allMarkdownRemark.edges.map(({ node }) =>
+            <PostListing key={node.fields.slug} post={node} />)}
+        </PostContainer>
       </MainColumn>
       <SideColumn>
         <Contact />
@@ -20,8 +22,8 @@ const Blog = ({ data }) => {
 };
 
 const PostContainer = styled.div`
-  margin: 15px 0;
-`
+  justify-content: flex-start;
+`;
 
 export const query = graphql`
   query AllBlogPosts {
@@ -31,6 +33,7 @@ export const query = graphql`
           frontmatter {
             title
             description
+            date(formatString: "MMMM DD, YYYY")
           }
           fields {
             slug
@@ -42,7 +45,5 @@ export const query = graphql`
     }
   }
 `;
-
-
 
 export default Blog;

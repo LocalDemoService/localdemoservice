@@ -11,6 +11,7 @@ class BlogPage extends Component {
       <SubpageWrapper>
         <MainColumn>
           <Title>{data.markdownRemark.frontmatter.title}</Title>
+          <Date>{data.markdownRemark.frontmatter.date}</Date>
           <div dangerouslySetInnerHTML={{
             __html: data.markdownRemark.html
           }}></div>

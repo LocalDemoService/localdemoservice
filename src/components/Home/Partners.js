@@ -5,15 +5,16 @@ import ohi from '../../images/ohi.png'
 import mauiFruit from '../../images/mauiFruit.png'
 import rawkin from '../../images/rawkin.png'
 import jem from '../../images/jem.png'
-import { HomePageWrapper, Border } from '../../components/styled/common'
+import { HomePageWrapper, Border, colors } from '../../components/styled/common'
 
 
 const partners = [
   {
     image: ahualoa,
     testimonial: {
-      text: null,
-      attribution: null
+      text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
+      snippet: '...increased sales, and received much better placement',
+      attribution: 'Kimberly Ino, Founder'
     }
   },
   {
@@ -26,9 +27,9 @@ const partners = [
   {
     image: mauiFruit,
     testimonial: {
-      snippet: `It has been an honor working with Local Demo Service! They have achieved success for my business Maui Fruit Jewels`,
+      snippet: `They have achieved success for my business Maui Fruit Jewels`,
       text: `"It has been an honor working with Local Demo Service! They have achieved success for my business Maui Fruit Jewels especially on Oahu. Plus they helped me to get the Hawaiian Seal of Quality for my products! Local Demo Service is a great entity for representing quality local products!"`,
-      attribution: `-Chris Ter Horst, Founder of Maui Fruit Jewels'`
+      attribution: `Chris Ter Horst, Founder of Maui Fruit Jewels'`
     }
   },
   {
@@ -62,7 +63,7 @@ const Partner = ({ image, testimonial }) => {
 
 const Partners = () => {
   return (
-    <Border topColor={'#33669944'} bottomColor={'rgba(108, 200, 191, 0.50)'}>
+    <Border topColor={colors(.5).black} bottomColor={colors(.5).blue}>
       <BackgroundContainer>
         <HomePageWrapper>
           <Title>Partners</Title>
@@ -119,6 +120,7 @@ const Testimonial = styled.div`
   color: #333;
   font-size: 14px;
   width: 65%;
+  text-transform: italic;
 `
 
 

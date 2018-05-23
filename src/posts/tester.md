@@ -1,6 +1,6 @@
 ---
 title: "Seed"
-date: "5/16/18"
+date: '2018-04-17T13:39:37-07:00'
 description: "test"
 tags:
   - test

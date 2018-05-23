@@ -16,7 +16,7 @@ const ContactPage = () => {
 };
 
 const Text = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px 0;
 `
 

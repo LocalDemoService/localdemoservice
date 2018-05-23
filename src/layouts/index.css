@@ -11,6 +11,7 @@ body {
   padding: 0;
 }
 
+
 input[type="file"] {
   position: absolute; 
   /* left: -99999rem; */
