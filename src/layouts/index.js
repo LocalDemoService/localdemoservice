@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children, data, location }) => (
     <Content>
       {children()}
     </Content>
-    <Footer />
+    <Footer logoSmall={data.logoSmall} />
   </div>
 )
 
@@ -48,6 +48,11 @@ query LayoutQuery {
     }
   }
   logo: imageSharp(id: { regex: "/logo.png/" }) {
+    sizes(maxWidth: 400) {
+      ...GatsbyImageSharpSizes
+    }
+  }
+  logoSmall: imageSharp(id: { regex: "/logo-small.png/" }) {
     sizes(maxWidth: 400) {
       ...GatsbyImageSharpSizes
     }

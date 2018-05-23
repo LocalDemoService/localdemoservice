@@ -7,9 +7,8 @@ const Merchandising = () => {
     <SubpageWrapper>
       <MainColumn>
         <Title>Merchandising with Local Demo Service</Title>
-        <p>Adipisicing cillum consectetur aliquip elit sit est. Dolore labore ex nostrud ea do pariatur dolore. Eiusmod tempor voluptate id duis amet et duis excepteur elit mollit.</p>
-        <p>Fugiat nulla occaecat Lorem magna laborum excepteur et laborum commodo commodo mollit occaecat veniam quis. Ipsum excepteur velit mollit cillum fugiat enim mollit qui quis. Exercitation non voluptate et occaecat cillum aute eu irure velit culpa id proident qui. Minim quis amet amet consectetur in nisi officia adipisicing cillum exercitation minim. Commodo ipsum fugiat fugiat consequat eu consequat nostrud tempor non exercitation incididunt consectetur officia excepteur. Anim consequat irure reprehenderit occaecat aliqua anim commodo do in irure in. Commodo pariatur nostrud eiusmod proident non labore deserunt enim.</p>
-        <p>Sunt laboris laboris labore et ad enim in veniam nisi irure. Amet culpa id occaecat nulla eiusmod aute consequat. Officia ipsum elit minim consectetur labore sunt pariatur velit fugiat qui eu ullamco aliqua sit. Est consequat nulla ipsum ut.</p>
+        <p>Send one of our specialists into the store(s) of your choice to stock the shelf, make the display look aesthetically pleasing, and report back any products that need ordering to you and to the buyer. Merchandising is a great opportunity to make sure your product is stocked and reordered in a timely manner: buyers have thousands of products to maintain and yours may not be on their radar. By sending one of our merchandisers to the store you will ensure sales, prevent lost accounts, build relationships with buyers in-person, gain insights into improvements that can be made, and potentially organize product shifts.</p>
+        <p>Interested in hearing more about Merchandising? Fill in the ‘Contact Form’ to the right and ask about our Merchandising program!</p>
       </MainColumn>
       <SideColumn>
         <Contact />

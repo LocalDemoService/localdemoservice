@@ -14,19 +14,19 @@ const teamMembers = [
   {
     name: "Nohea Jackson",
     role: "Product Demonstration",
-    bio: "Do ex quis ut fugiat irure consequat consequat commodo consectetur consectetur ut ex occaecat in. Eu occaecat nulla commodo duis velit aute minim. Esse est sint incididunt deserunt quis magna adipisicing esse do consequat eu commodo esse. Qui proident velit officia veniam velit elit anim sit commodo consectetur.",
+    bio: "Maui, Hawaii",
     image: "nohea"
   },
   {
     name: "Carl Rodriguez",
     role: "Product Demonstration",
-    bio: "Do ex quis ut fugiat irure consequat consequat commodo consectetur consectetur ut ex occaecat in. Eu occaecat nulla commodo duis velit aute minim. Esse est sint incididunt deserunt quis magna adipisicing esse do consequat eu commodo esse. Qui proident velit officia veniam velit elit anim sit commodo consectetur.",
+    bio: "Bay Area, California",
     image: "carl"
   },
   {
     name: "Ruth Stoddard",
     role: "Owner",
-    bio: "Do ex quis ut fugiat irure consequat consequat commodo consectetur consectetur ut ex occaecat in. Eu occaecat nulla commodo duis velit aute minim. Esse est sint incididunt deserunt quis magna adipisicing esse do consequat eu commodo esse. Qui proident velit officia veniam velit elit anim sit commodo consectetur.",
+    bio: "Oahu, Hawaii",
     image: "ruth"
   }
 ];

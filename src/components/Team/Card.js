@@ -22,6 +22,7 @@ const CardContainer = styled(Row) `
   margin: 15px 50px;
   padding: 15px 25px;
   border: 3px solid ${colors(0.1).black};
+  width: 600px;
 `;
 
 const Image = styled(Img) `

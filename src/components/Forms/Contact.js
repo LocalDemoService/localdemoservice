@@ -7,7 +7,7 @@ class Contact extends Component {
   render() {
     return (
       <ContactFormWrapper>
-        <Title>Contact Us</Title>
+        <SmallTitle>Contact Us</SmallTitle>
         <div>{this.props.children}</div>
         <form
           name="contact"
@@ -48,6 +48,10 @@ const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+`
+
+const SmallTitle = styled(Title)`
+  font-size: 1.5rem;
 `
 
 export default Contact

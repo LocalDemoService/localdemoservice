@@ -32,6 +32,7 @@ const Careers = () => {
           :
           <Openings>
             <Title>Job Openings</Title>
+            <p>Are you an awesome demo specialist or brand ambassador? Do you have sales talent? Have you represented brands at conferences or events? Send us your resume, some photos from your brand ambassading experience, your location, and why you would love to represent Local Demo Service.</p>
             {jobOpenings.map(j => (
               <Job
                 location={j.location}

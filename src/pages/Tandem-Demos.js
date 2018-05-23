@@ -1,15 +1,20 @@
 import React from 'react';
-import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
+import styled from 'styled-components'
+import { SubpageWrapper, MainColumn, SideColumn, Title, Column, colors } from '../components/styled/common'
 import Contact from '../components/Forms/Contact'
+import rustys from '../images/rustys-hawaiian.png'
 
 const TandemDemos = () => {
   return (
     <SubpageWrapper>
       <MainColumn>
         <Title>Tandem Demos with Local Demo Service</Title>
-        <p>Adipisicing cillum consectetur aliquip elit sit est. Dolore labore ex nostrud ea do pariatur dolore. Eiusmod tempor voluptate id duis amet et duis excepteur elit mollit.</p>
-        <p>Fugiat nulla occaecat Lorem magna laborum excepteur et laborum commodo commodo mollit occaecat veniam quis. Ipsum excepteur velit mollit cillum fugiat enim mollit qui quis. Exercitation non voluptate et occaecat cillum aute eu irure velit culpa id proident qui. Minim quis amet amet consectetur in nisi officia adipisicing cillum exercitation minim. Commodo ipsum fugiat fugiat consequat eu consequat nostrud tempor non exercitation incididunt consectetur officia excepteur. Anim consequat irure reprehenderit occaecat aliqua anim commodo do in irure in. Commodo pariatur nostrud eiusmod proident non labore deserunt enim.</p>
-        <p>Sunt laboris laboris labore et ad enim in veniam nisi irure. Amet culpa id occaecat nulla eiusmod aute consequat. Officia ipsum elit minim consectetur labore sunt pariatur velit fugiat qui eu ullamco aliqua sit. Est consequat nulla ipsum ut.</p>
+        <p>An affordable way to increase exposure and overall sales is through our tandem demo system. We sample and sell your products alongside another tandem partner. Pairings are complementary; for example Chips & Salsa, Coffee & Chocolate, Jam & Baked Goods, etc.</p>
+        <p>Interested in hearing Tandem Demo Rates? Fill in the ‘Contact Form’ to the right and ask about our referral program!</p>
+        <Aside>
+          <img src={rustys} style={{ width: 150 }} />
+          <small>Tandem demos at Whole Foods locations more than doubled sales of Rusty’s Hawaiian Coffee in under one year.</small>
+        </Aside>
       </MainColumn>
       <SideColumn>
         <Contact />
@@ -17,5 +22,17 @@ const TandemDemos = () => {
     </SubpageWrapper>
   );
 };
+
+const Aside = styled(Column) `
+  margin-top: -30px;
+  align-items: center;
+  small {
+    font-size: 0.85rem;
+    width: 45%;
+    margin-top: -50px;
+    color: ${colors().blue}
+  }
+
+`
 
 export default TandemDemos;

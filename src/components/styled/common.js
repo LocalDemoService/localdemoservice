@@ -41,14 +41,16 @@ const MultiColumnWrapper = styled.div`
 `;
 
 export const MainColumn = styled.div`
-  flex: 4;
+  flex: 5;
   margin-top: 50px;
-  padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  p {
+  p, small {
+    width: 70%;
+  }
+  ul {
     width: 70%;
   }
 `;
@@ -124,6 +126,7 @@ export const Button = styled.button`
 `;
 
 export const Title = styled.div`
+  text-align: center;
   font-size: 2rem;
   font-weight: 200;
   padding-bottom: 25px;
@@ -139,7 +142,7 @@ export const Input = styled.div`
   }
 
   input {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import { HomePageWrapper, Border, colors } from '../components/styled/common'
+import { SubpageWrapper, Border, colors, MainColumn, SideColumn } from '../components/styled/common'
+import Contact from '../components/Forms/Contact'
 
 const locations = {
   idaho: {
@@ -21,7 +22,7 @@ const Location = ({ location }) => (
   <LocationWrapper>
     <TextContainer>
       <Name>{location.location}</Name>
-      hello
+
     </TextContainer>
     <MapContainer><img src={location.mapUrl} /></MapContainer>
   </LocationWrapper>
@@ -29,13 +30,19 @@ const Location = ({ location }) => (
 
 const Locations = () => {
   return (
-    <HomePageWrapper>
-      {Object.keys(locations).map(l => (
-        <div>
-          <Location location={locations[l]} />
-        </div>
-      ))}
-    </HomePageWrapper>
+    <SubpageWrapper>
+      <MainColumn>
+        <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, and California. Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can train someone in that area!</p>
+        {Object.keys(locations).map(l => (
+          <div key={l.location}>
+            <Location location={locations[l]} />
+          </div>
+        ))}
+      </MainColumn>
+      <SideColumn>
+        <Contact />
+      </SideColumn>
+    </SubpageWrapper>
   );
 };
 
