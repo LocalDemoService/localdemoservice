@@ -7,6 +7,7 @@ import rawkin from '../../images/rawkin.png'
 import jem from '../../images/jem.png'
 import rusty from '../../images/rustys-hawaiian.png'
 import alterEco from '../../images/alter-eco.jpg'
+import maunakea from '../../images/maunakea.png'
 import { HomePageWrapper, Border, colors } from '../../components/styled/common'
 
 
@@ -14,9 +15,7 @@ const partners = [
   {
     image: ahualoa,
     testimonial: {
-      text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
-      snippet: '...increased sales, and received much better placement',
-      attribution: 'Kimberly Ino, Founder'
+      
     }
   },
   {
@@ -60,6 +59,14 @@ const partners = [
     testimonial: {
       text: null,
       attribution: null
+    }
+  },
+  {
+    image: maunakea,
+    testimonial: {
+      text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
+      snippet: '...increased sales, and received much better placement',
+      attribution: 'Kimberly Ino, Founder'
     }
   }
 ]
@@ -137,6 +144,7 @@ const Testimonial = styled.div`
   font-size: 14px;
   width: 65%;
   text-transform: italic;
+  text-align: center;
 `
 
 

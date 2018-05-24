@@ -50,6 +50,11 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    yinYangCoffee: imageSharp(id: { regex: "/yinyangcoffee.jpg/" }) {
+      sizes(maxWidth: 250, maxHeight: 250) {
+        ...GatsbyImageSharpSizes
+      }
+    }
     bgImage: imageSharp(id: { regex: "/bg-tile.jpg/" }) {
       sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes

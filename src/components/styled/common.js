@@ -97,7 +97,7 @@ export const Button = styled.button`
   display: inline-block;
   border: none;
   text-decoration: none;
-  color: ${colors(1).black};
+  color: ${colors().black};
   font-family: sans-serif;
   font-size: 1rem;
   cursor: pointer;
@@ -108,17 +108,14 @@ export const Button = styled.button`
 
   button:hover,
   button:focus {
-    background: #0053ba;
+    background: ${colors().blue};
   }
 
   button:focus {
     outline: 1px solid #000;
     outline-offset: -4px;
   }
-  font-size: 1rem;
-  padding: 5px 15px;
-  margin: 5px auto;
-  background-color: ${colors(0.5).green};
+  
 
   button:active {
     transform: scale(0.99);

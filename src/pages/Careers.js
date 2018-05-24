@@ -32,7 +32,7 @@ const Careers = () => {
           :
           <Openings>
             <Title>Job Openings</Title>
-            <p>Are you an awesome demo specialist or brand ambassador? Do you have sales talent? Have you represented brands at conferences or events? Send us your resume, some photos from your brand ambassading experience, your location, and why you would love to represent Local Demo Service.</p>
+            <Text>Are you an awesome demo specialist or brand ambassador? Do you have sales talent? Have you represented brands at conferences or events? Send us your resume, some photos from your brand ambassading experience, your location, and why you would love to represent Local Demo Service.</Text>
             {jobOpenings.map(j => (
               <Job
                 location={j.location}
@@ -53,6 +53,10 @@ const NoJobs = styled.div`
   margin-top: 50px;
   font-size: 2rem;
   width: 80%
+`
+const Text = styled.p`
+  align-self: center;
+  text-align: center;
 `
 
 const Openings = styled.div`

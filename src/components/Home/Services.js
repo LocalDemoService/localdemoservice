@@ -12,7 +12,7 @@ const services = [
   },
   {
     name: 'Tandem Demos',
-    image: 'shelves',
+    image: 'yinYangCoffee',
     url: '/tandem-demos'
   },
   {
@@ -49,7 +49,6 @@ const Services = ({ data }) => {
           <ServicesContainer>
             {services.map(service => (
               <SLink to={service.url} key={service.name + service.image}>
-
                 <Service
                   name={service.name}
                   image={data[service.image]} />
