@@ -15,7 +15,7 @@ const partners = [
   {
     image: ahualoa,
     testimonial: {
-      
+
     }
   },
   {
@@ -120,6 +120,7 @@ const PartnersContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 25px;
 `
 
 const PartnerContainer = styled.div`
@@ -140,10 +141,10 @@ const PartnerImage = styled.div`
 `
 
 const Testimonial = styled.div`
-  color: #333;
+  color: ${colors().black};
   font-size: 14px;
   width: 65%;
-  text-transform: italic;
+  font-style: italic;
   text-align: center;
 `
 

@@ -1,48 +1,56 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
-import { Button, Input, Title } from '../styled/common'
+import { Button, Input, Title, Row } from '../styled/common'
 
 class Contact extends Component {
   render() {
     return (
-      <ContactFormWrapper>
-        <SmallTitle>Contact Us</SmallTitle>
-        <div>{this.props.children}</div>
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
+      <Center>
+        <ContactFormWrapper>
+          <SmallTitle>Contact Us</SmallTitle>
+          <div>{this.props.children}</div>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
 
-          <Input>
-            <label>Name</label>
-            <input
-              type="text"
-              name={'name'}
-              placeholder={'First Last'} />
-          </Input>
-          <Input>
-            <label>Email</label>
-            <input
-              name={'email'}
-              placeholder={'a@a.com'}
-              type="email" />
-          </Input>
-          <Input>
-            <label>Message</label>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10" />
-          </Input>
-          <Button type='submit'>Send</Button>
-        </form>
-      </ContactFormWrapper>
+            <Input>
+              <label>Name</label>
+              <input
+                type="text"
+                name={'name'}
+                placeholder={'First Last'} />
+            </Input>
+            <Input>
+              <label>Email</label>
+              <input
+                name={'email'}
+                placeholder={'a@a.com'}
+                type="email" />
+            </Input>
+            <Input>
+              <label>Message</label>
+              <textarea
+                name="message"
+                cols="30"
+                rows="10" />
+            </Input>
+            <Input>
+              <Button type='submit'>Send</Button>
+            </Input>
+          </form>
+        </ContactFormWrapper>
+      </Center>
     );
   }
 }
+
+const Center = styled(Row) `
+  justify-content: center;
+`
 
 const ContactFormWrapper = styled.div`
   display: flex;
@@ -50,7 +58,7 @@ const ContactFormWrapper = styled.div`
   padding: 50px 0;
 `
 
-const SmallTitle = styled(Title)`
+const SmallTitle = styled(Title) `
   font-size: 1.5rem;
 `
 

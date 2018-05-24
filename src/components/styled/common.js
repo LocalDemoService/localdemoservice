@@ -41,7 +41,7 @@ const MultiColumnWrapper = styled.div`
 `;
 
 export const MainColumn = styled.div`
-  flex: 5;
+  flex: 4;
   margin-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -91,7 +91,6 @@ export const SLink = styled(Link) `
 export const Button = styled.button`
   font-size: 1rem;
   padding: 5px 15px;
-  margin: 5px auto;
   background-color: ${colors(0.5).green};
 
   display: inline-block;
@@ -134,12 +133,23 @@ export const Input = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3px 0;
+  align-items: flex-start;
   label {
     font-size: 1rem;
   }
 
-  input {
+  input, textarea {
     font-size: 1rem;
+    width: 100%;
+  }
+
+  label {
+    align-self: flex-start;
+    padding: 5px 0;
+  }
+
+  button {
+    align-self: flex-start;
   }
 `;
 
