@@ -3,6 +3,13 @@ import styled from 'styled-components'
 import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
 import CareersForm from '../components/Forms/CareersForm'
 
+// format:
+// {
+//   location: 'Oahu, Hawaii',
+//   title: 'Product Demonstration',
+//   description: 'Est est nulla non et exercitation minim do consectetur. Commodo sunt sunt minim duis. Officia commodo esse nulla sunt. Magna ea culpa adipisicing exercitation aliquip deserunt eiusmod nulla et officia deserunt veniam veniam.'
+// }, //remember the comma!
+
 const jobOpenings = [
   {
     location: 'Oahu, Hawaii',
@@ -54,9 +61,12 @@ const NoJobs = styled.div`
   font-size: 2rem;
   width: 80%
 `
-const Text = styled.p`
-  align-self: center;
-  text-align: center;
+const Text = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const Openings = styled.div`
@@ -74,6 +84,7 @@ const Location = styled.div`
 
 const JobTitle = styled.div`
   font-size: 1.5rem;
+  padding-top: 5px;
 `
 
 export default Careers;

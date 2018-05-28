@@ -24,13 +24,18 @@ const TandemDemos = () => {
 };
 
 const Aside = styled(Column) `
-  margin-top: -30px;
+  flex: 1;
   align-items: center;
+  border-top: 1px solid ${colors(0.3).blue};
+  margin-top: 10px;
   small {
     font-size: 0.85rem;
     width: 45%;
     margin-top: -50px;
     color: ${colors().blue}
+  }
+  img {
+    margin-top: -30px;
   }
 
 `

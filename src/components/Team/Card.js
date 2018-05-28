@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import { colors, Row, Column, mq } from "../styled/common";
 
 const Card = ({ person, sizes }) => {
-  console.log(sizes.sizes);
   return (
     <CardContainer>
       <Image sizes={sizes} alt="Placeholder" />

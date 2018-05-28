@@ -13,9 +13,9 @@ body {
 
 
 input[type="file"] {
-  position: absolute; 
-  /* left: -99999rem; */
-  opacity: 0;
+  /* display: none; */
+  /* opacity: 0; */
+  /* overflow: hidden; */
 }
 
 @media only screen and (max-width: 480px) {
@@ -27,6 +27,12 @@ input[type="file"] {
     font-size: inherit;
   }
 }
+
+hr {
+  
+  height: 1px;
+}
+
 
 /* 
 article,
@@ -497,19 +503,6 @@ iframe {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-hr {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
-  border: none;
-  height: 1px;
 }
 address {
   margin-left: 0;

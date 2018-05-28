@@ -59,7 +59,7 @@ export const MainColumn = styled.div`
   ul {
     width: 70%;
   }
-
+  
   @media (max-width: ${mq.small}px) {
     padding-bottom: 15px;
   }

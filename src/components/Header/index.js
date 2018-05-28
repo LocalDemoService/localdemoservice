@@ -47,10 +47,12 @@ class Header extends Component {
   }
 
   componentDidMount() {
+    let { background } = this.props.data
     this.setState(state => {
       return {
         ...state,
-        backgroundImage: this.props.data.background.sizes.src
+        backgroundImage: background.sizes.src,
+        backgroundImages: []
       }
     })
     this.rotateImage()
@@ -63,7 +65,7 @@ class Header extends Component {
         this.setState(state => {
           return {
             ...state,
-            backgroundImage: i
+            backgroundImage: i,
           }
         })
       })

@@ -46,7 +46,12 @@ query LayoutQuery {
     sizes(maxWidth: 1280, duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }) {
       ...GatsbyImageSharpSizes
     }
-  }
+  },
+  background2: imageSharp(id: { regex: "/background2.jpg/" }) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }) {
+      ...GatsbyImageSharpSizes
+    }
+  },
   logo: imageSharp(id: { regex: "/logo.png/" }) {
     sizes(maxWidth: 400) {
       ...GatsbyImageSharpSizes

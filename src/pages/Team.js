@@ -32,7 +32,6 @@ const teamMembers = [
 ];
 
 const Team = ({ data }) => {
-  console.log(data);
   return (
     <SubpageWrapper>
       <MainColumn>

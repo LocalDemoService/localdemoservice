@@ -42,13 +42,12 @@ const Service = ({ name, image }) => {
 }
 
 const Services = ({ data }) => {
-  console.log(mq.small)
   return (
     <Border topColor={colors(.5).green} bottomColor={colors(.5).blue}>
       <BackgroundContainer backgroundImage={data.bgImage.sizes.src}>
         <HomePageWrapper>
+          <STitle>Our Services</STitle>
           <ServicesContainer>
-            <Title>Our Services</Title>
             {services.map(service => (
               <SLink to={service.url} key={service.name + service.image}>
                 <Service
@@ -63,16 +62,15 @@ const Services = ({ data }) => {
   )
 }
 
-// margin-left: calc(50% - 50vw);
-// margin-right: calc(50% - 50vw);
-
+const STitle = styled(Title) `
+  padding-top: 25px;
+`
 
 const ServicesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 50px 0;
   font-size: 1rem;
   align-items: center;
 
@@ -95,7 +93,8 @@ const ServiceContainer = styled.div`
 
 const ServiceTitle = styled.div`
   text-align: center;
-  margin-top: 5px;  
+  margin-top: 5px;
+  min-height: 50px;
 `
 
 export default Services

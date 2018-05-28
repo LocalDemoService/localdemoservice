@@ -28,10 +28,8 @@ const CareersForm = () => {
             type="email" />
         </Input>
         <Input>
-          <InputFile>
-            Attach Resume
-            <input type='file' />
-          </InputFile>
+          <label>Attach Resume</label>
+          <input type='file' />
         </Input>
         <Input>
           <label>Cover Letter</label>
@@ -49,7 +47,7 @@ const CareersForm = () => {
 const InputFile = styled.label`
   color: ${colors(1).black};
   font-size: 1.5rem;
-  padding: 5px 15px;
+  padding: 5px 15px !important;
   margin: 5px auto;
   background-color: ${colors(0.5).green};
   cursor: pointer;
