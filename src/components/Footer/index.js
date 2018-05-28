@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { SLink } from '../styled/common'
+import { SLink, mq } from '../styled/common'
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/lib/fa'
 
+const iconSize = () => {
+
+}
 
 const Footer = ({ logoSmall }) => {
   return (
     <FooterContainer>
-      <Logo sizes={logoSmall.sizes} style={{position: 'absolute', left: 15}}  />
+      <Logo sizes={logoSmall.sizes} style={{ position: 'absolute', left: 15 }} />
       <FooterWidth>
         <FooterContact>
           <SLink to={'tel:808-722-5492'}>808-722-5492</SLink>
@@ -21,10 +24,10 @@ const Footer = ({ logoSmall }) => {
           <SLink to={'/careers'}>Careers</SLink>
         </FooterLinks>
         <FooterSocial>
-          <SLink to={'https://www.facebook.com/LocalDemoService'}><FaFacebookSquare size={50} /></SLink>
-          <SLink to={'https://www.linkedin.com/company/local-demo-service/'}><FaLinkedin size={50} /></SLink>
-          <SLink to={'https://twitter.com/LocalDemoServic'}><FaTwitter size={50} /></SLink>
-          <SLink to={'https://www.instagram.com/localdemoservice/'}><FaInstagram size={50} /></SLink>
+          <SLink to={'https://www.facebook.com/LocalDemoService'}><FaFacebookSquare /></SLink>
+          <SLink to={'https://www.linkedin.com/company/local-demo-service/'}><FaLinkedin /></SLink>
+          <SLink to={'https://twitter.com/LocalDemoServic'}><FaTwitter /></SLink>
+          <SLink to={'https://www.instagram.com/localdemoservice/'}><FaInstagram /></SLink>
         </FooterSocial>
       </FooterWidth>
     </FooterContainer>
@@ -39,7 +42,6 @@ const FooterContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 8rem;
 
   a {
     color: #333;
@@ -53,10 +55,17 @@ const FooterWidth = styled.div`
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  min-height: 8rem;
+
+  @media (max-width: ${mq.small}px) {
+    flex-direction: column;
+    padding: 15px 0;
+  }
 `
 
-const Logo = styled(Img)`
-margin-top: -55px;
+const Logo = styled(Img) `
+  align-self: center;
+  margin-top: -55px;
   height: 7rem;
   width: 7rem;
 `
@@ -74,7 +83,11 @@ const FooterLinks = styled.div`
   border-left: 2px solid #333;
   border-right: 2px solid #333;
   margin: 0 25px;
-  `
+
+  @media (max-width: ${mq.small}px) {
+    margin: 15px 0;
+  }
+`
 
 const FooterSocial = styled.div`
   flex: 1;
@@ -83,9 +96,14 @@ const FooterSocial = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 5px 15px;
+  font-size: 50px;
 
-  @media (max-width: 480px) {
-    font-size: 10px;  
+  @media (max-width: ${mq.medium}px) {
+    flex: .65;
+  }
+
+  @media (max-width: ${mq.medium}px) {
+    font-size: 25px;
   }
 `
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import { mq } from '../styled/common'
 
 const Welcome = () => {
   return (
@@ -26,9 +27,13 @@ const WelcomeTitle = styled.h2`
 
 const WelcomeText = styled.div`  
   text-align: center;
-  max-width: 34em;
+  max-width: 34rem;
   font-size: larger;
   font-weight: 300;
+
+  @media (max-width: ${mq.small}px) {
+    max-width: 20rem;
+  }
 `
 
 export default Welcome;

@@ -1,37 +1,52 @@
 import React from 'react';
 import styled from 'styled-components'
-import { SubpageWrapper, Border, colors, MainColumn, SideColumn, Row, Column, Title } from '../components/styled/common'
+import { SubpageWrapper, Border, colors, MainColumn, SideColumn, Row, Column, Title, mq } from '../components/styled/common'
 import Contact from '../components/Forms/Contact'
 
 const locations = {
-  idaho: {
+  sandpoint: {
     city: 'Sandpoint, Idaho',
-    mapUrl: 'https://googlemaps.github.io/js-map-label/screenshot.png',
     places: ['Super1 Foods', 'Winter Ridge Groceries', 'Yokes Fresh Market']
   },
-  hawaii: {
+  maui: {
     city: 'Maui, Hawaii',
-    mapUrl: 'https://googlemaps.github.io/js-map-label/screenshot.png',
-    places: []
+    places: ['Mana Foods', 'Maui Farmers', 'Market Lahaina']
   },
-  washington: {
+  oahu: {
+    city: 'Oahu, Hawaii',
+    places: ['Whole Foods', 'Down to earth', 'Foodland/R.Field', 'Kokua Market', 'Dole Plantation']
+  },
+  spokane: {
     city: 'Spokane, Washington',
-    mapUrl: 'https://googlemaps.github.io/js-map-label/screenshot.png',
-    places: []
+    places: [`Huckleberry's`, 'Safeway', 'Yokes', 'Super 1']
+  },
+  coeurdalene: {
+    city: `Couer d'Alene, Idaho`,
+    places: ['Natural Grocers', 'Safeway', `Huckleberry's`]
+  },
+  sanFransico: {
+    city: 'San Francisco, California',
+    places: ['Rainbow Grocers', 'Whole Foods']
+  },
+  farmington: {
+    city: 'Farmington, New Mexico',
+    places: ['Natural Grocers']
+  },
+  durango: {
+    city: 'Durango, Colorado',
+    places: ['Natural Grocers']
   }
 }
 
 const Location = ({ location }) => (
   <LocationWrapper>
-    <TextContainer>
-      <Name>{location.city}</Name>
-      <ul>
-        {location.places.map(place => <Place>{place}</Place>)}
-      </ul>
-    </TextContainer>
-    <MapContainer><img src={location.mapUrl} /></MapContainer>
+    <Name>{location.city}</Name>
+    <ul>
+      {location.places.map(place => <Place>{place}</Place>)}
+    </ul>
   </LocationWrapper>
 )
+// <MapContainer><img src={location.mapUrl} /></MapContainer>
 
 const Locations = () => {
   return (
@@ -40,9 +55,7 @@ const Locations = () => {
         <Title>Locations</Title>
         <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, and California. Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can train someone in that area!</p>
         {Object.keys(locations).map(l => (
-          <div key={l.location}>
-            <Location location={locations[l]} />
-          </div>
+          <Location key={l.location} location={locations[l]} />
         ))}
       </MainColumn>
       <SideColumn>
@@ -52,42 +65,35 @@ const Locations = () => {
   );
 };
 
-const LocationWrapper = styled(Row) `
-  margin: 15px 50px;
-  padding: 15px 25px;
+const LocationWrapper = styled(Column) `
   border-bottom: 3px solid ${colors(0.1).black};
-  
-  `
+  align-items: center;  
+  margin-right: 10px;
+  width: 300px;
+  margin-top: 15px;
+  @media (min-width: ${mq.small}px) {
+    width: 400px;
+    margin-top: 25px;
+  }
+
+`
 
 const TextContainer = styled.div`
-  flex: 1;  
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;  
-  margin-right: 10px;
-  
-  @media (min-width: 489px) {
-    width: 300px;
-  }
 `
 
 const Name = styled.div`
-  font-size: 2rem;
-  text-align: right;
+  flex: 1;
+  font-size: 1.5rem;
 `
 
 const Place = styled.li`
+  flex: 1;
   font-size: 1rem;
   list-style: none;
   padding: 5px 0;
-`
-
-const MapContainer = styled.div`
-  flex: 1;
-  margin-left: 10px;
-  img {
-    width: 250px;
-  }
+  text-align: left;
+  padding-left: 50px;
 `
 
 export default Locations;

@@ -12,22 +12,22 @@ const teamMembers = [
     image: "matthew"
   },
   {
+    name: "Ruth Stoddard",
+    role: "Demo Specialist",
+    bio: "Oahu, Hawaii",
+    image: "ruth"
+  },
+  {
     name: "Nohea Jackson",
-    role: "Product Demonstration",
+    role: "Demo Specialist",
     bio: "Maui, Hawaii",
     image: "nohea"
   },
   {
     name: "Carl Rodriguez",
-    role: "Product Demonstration",
+    role: "Demo Specialist",
     bio: "Bay Area, California",
     image: "carl"
-  },
-  {
-    name: "Ruth Stoddard",
-    role: "Owner",
-    bio: "Oahu, Hawaii",
-    image: "ruth"
   }
 ];
 

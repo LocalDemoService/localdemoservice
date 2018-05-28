@@ -8,7 +8,7 @@ import jem from '../../images/jem.png'
 import rusty from '../../images/rustys-hawaiian.png'
 import alterEco from '../../images/alter-eco.jpg'
 import maunakea from '../../images/maunakea.png'
-import { HomePageWrapper, Border, colors } from '../../components/styled/common'
+import { HomePageWrapper, Border, colors, mq } from '../../components/styled/common'
 
 
 const partners = [
@@ -75,7 +75,7 @@ const Partner = ({ image, testimonial }) => {
   return (
     <PartnerContainer>
       <PartnerImage>
-        <img src={image} />
+        <Image src={image} />
       </PartnerImage>
       <Testimonial>
         {testimonial.snippet && `${testimonial.snippet}...`}
@@ -121,6 +121,12 @@ const PartnersContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 25px;
+  align-items: center;
+
+  @media (max-width: ${mq.small}px) {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
 `
 
 const PartnerContainer = styled.div`
@@ -132,11 +138,16 @@ const PartnerContainer = styled.div`
 
 const PartnerImage = styled.div`
   display: flex;
-  height: 200px;
+`
 
-  img {
-    width: 200px;
-    align-self: center;
+const Image = styled.img`
+  width: 200px;
+  align-self: center;
+  padding: 15px
+
+  @media (max-width: ${mq.small}px) {
+    width: 150px; 
+    padding: 5px;
   }
 `
 

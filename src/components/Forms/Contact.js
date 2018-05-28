@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
-import { Button, Input, Title, Row } from '../styled/common'
+import { Button, Input, Title, Row, mq } from '../styled/common'
 
 class Contact extends Component {
   render() {
@@ -34,9 +34,7 @@ class Contact extends Component {
             <Input>
               <label>Message</label>
               <textarea
-                name="message"
-                cols="30"
-                rows="10" />
+                name="message" />
             </Input>
             <Input>
               <Button type='submit'>Send</Button>
@@ -56,6 +54,10 @@ const ContactFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+
+  @media (max-width: ${mq.small}px) {
+    padding: 15px;
+  }
 `
 
 const SmallTitle = styled(Title) `

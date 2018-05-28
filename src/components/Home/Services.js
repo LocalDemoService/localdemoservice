@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
-import { HomePageWrapper, Border, SLink, colors } from '../styled/common'
+import { HomePageWrapper, Border, SLink, Title, colors, mq } from '../styled/common'
 
 const services = [
   {
@@ -42,11 +42,13 @@ const Service = ({ name, image }) => {
 }
 
 const Services = ({ data }) => {
+  console.log(mq.small)
   return (
     <Border topColor={colors(.5).green} bottomColor={colors(.5).blue}>
       <BackgroundContainer backgroundImage={data.bgImage.sizes.src}>
         <HomePageWrapper>
           <ServicesContainer>
+            <Title>Our Services</Title>
             {services.map(service => (
               <SLink to={service.url} key={service.name + service.image}>
                 <Service
@@ -71,6 +73,14 @@ const ServicesContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding: 50px 0;
+  font-size: 1rem;
+  align-items: center;
+
+  @media (max-width: ${mq.small}px) {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    font-size: 1.25rem;
+  }
 `
 
 const BackgroundContainer = styled.div`
@@ -80,6 +90,7 @@ const BackgroundContainer = styled.div`
 
 const ServiceContainer = styled.div`
   width: 150px;
+  padding: 10px;
 `
 
 const ServiceTitle = styled.div`

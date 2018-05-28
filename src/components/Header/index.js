@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import { HomePageWrapper, Border, colors } from '../../components/styled/common'
+import { HomePageWrapper, Border, colors, mq } from '../../components/styled/common'
 
 const nav = [
   {
@@ -37,14 +37,45 @@ const nav = [
 ]
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      backgroundImage: '',
+      backgroundImages: []
+    }
+  }
+
+  componentDidMount() {
+    this.setState(state => {
+      return {
+        ...state,
+        backgroundImage: this.props.data.background.sizes.src
+      }
+    })
+    this.rotateImage()
+  }
+
+
+  rotateImage = () => {
+    setInterval(() => {
+      this.state.backgroundImages.map(i => {
+        this.setState(state => {
+          return {
+            ...state,
+            backgroundImage: i
+          }
+        })
+      })
+    }, 1000)
+  }
 
   render() {
     const { data } = this.props
-    console.log(data);
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
-        <BackgroundContainer backgroundImage={data.background.sizes.src}>
+        <BackgroundContainer backgroundImage={this.state.backgroundImage}>
           <HeaderBody>
             <Image sizes={data.logo.sizes} />
             <HeaderLink style={{ marginTop: -50 }}>
@@ -98,6 +129,7 @@ const HeaderContainer = styled.div`
     font-weight: normal;
   }
 `
+
 const BackgroundContainer = styled.div`  
   background: url(${props => props.backgroundImage}) no-repeat center center;
   background-size: cover;
@@ -113,6 +145,10 @@ const HeaderBody = styled.div`
 const Image = styled(Img) `
   width: 250px;
   margin: 0 auto;
+
+  @media (max-width: ${mq.small}px) {
+    width: 150px;
+  }
 `
 
 const HeaderLink = styled.h1`
@@ -131,6 +167,7 @@ const MainNav = styled.nav`
   a {
     text-decoration: none;
     color: white;
+    padding: 5px 1rem;
 
     &:hover {
       border-bottom: 1px solid ${colors(0.5).green};

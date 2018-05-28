@@ -2,15 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
 
-export const colors = (alpha = 1) => {
-  return {
+export const colors = (alpha = 1) => (
+  {
     green: `rgba(153, 202, 59, ${alpha})`,
     blue: `rgba(134, 200, 232, ${alpha})`,
     brown: `rgba(134, 98, 46, ${alpha})`,
     black: `rgba(51, 51, 51, ${alpha})`,
     transparent: `rgba(0, 0, 0, 0)`
-  };
-};
+  }
+)
+
+export const mq = {
+  small: 489,
+  medium: 700,
+  large: 960
+}
 
 export const Row = styled.div`
   display: flex;
@@ -32,9 +38,9 @@ const MultiColumnWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: ${mq.large}px;
 
-  @media (max-width: 480px) {
+  @media (max-width: ${mq.small}px) {
     flex-direction: column;
     align-items: center;
   }
@@ -53,11 +59,19 @@ export const MainColumn = styled.div`
   ul {
     width: 70%;
   }
+
+  @media (max-width: ${mq.small}px) {
+    padding-bottom: 15px;
+  }
 `;
 
 export const SideColumn = styled.div`
   flex: 1;
   padding-top: 50px;
+
+  @media (max-width: ${mq.small}px) {
+    padding: 0;
+  }
 `;
 
 export const SubpageWrapper = props => <MultiColumnWrapper {...props} />;
