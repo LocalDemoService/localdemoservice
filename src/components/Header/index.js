@@ -41,45 +41,61 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      backgroundImage: '',
-      backgroundImages: []
+      backgroundImage: { image: 'background' },
+      backgroundImages: [
+        {
+          image: 'background'
+        },
+        {
+          image: 'background2',
+          position: 'top'
+        },
+        {
+          image: 'background3',
+        },
+        {
+          image: 'background4',
+          position: 'bottom'
+        }
+      ]
     }
   }
 
   componentDidMount() {
-    let { background } = this.props.data
-    this.setState(state => {
-      return {
-        ...state,
-        backgroundImage: background.sizes.src,
-        backgroundImages: []
-      }
-    })
     this.rotateImage()
   }
 
 
   rotateImage = () => {
+    const { backgroundImages } = this.state
+    let currentImageIndex = 0;
     setInterval(() => {
-      this.state.backgroundImages.map(i => {
-        this.setState(state => {
-          return {
-            ...state,
-            backgroundImage: i,
-          }
-        })
-      })
-    }, 1000)
+      if (currentImageIndex >= this.state.backgroundImages.length) {
+        currentImageIndex = 0
+      }
+      this.setState(state => {
+        return {
+          ...state,
+          backgroundImage: backgroundImages[currentImageIndex],
+        }
+      }, () => ++currentImageIndex)
+    }, 3500)
   }
 
   render() {
     const { data } = this.props
+    const { backgroundImage } = this.state
+    console.log(data[backgroundImage.image], backgroundImage)
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
-        <BackgroundContainer backgroundImage={this.state.backgroundImage}>
+        <BackgroundContainer
+          backgroundImage={backgroundImage && data[backgroundImage.image].sizes.src}
+          position={backgroundImage.position ? backgroundImage.position : 'center'} >
           <HeaderBody>
-            <Image sizes={data.logo.sizes} />
+            <Link to={'/'}>
+              <Image sizes={data.logo.sizes} />
+            </Link>
             <HeaderLink style={{ marginTop: -50 }}>
               <Link
                 to="/"
@@ -132,8 +148,8 @@ const HeaderContainer = styled.div`
   }
 `
 
-const BackgroundContainer = styled.div`  
-  background: url(${props => props.backgroundImage}) no-repeat center center;
+const BackgroundContainer = styled.div`
+  background: url(${props => props.backgroundImage}) no-repeat ${props => props.position} center;
   background-size: cover;
 `
 

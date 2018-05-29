@@ -7,6 +7,7 @@ import 'typeface-lato'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { colors } from '../components/styled/common'
 import './index.css'
 
 const TemplateWrapper = ({ children, data, location }) => (
@@ -34,6 +35,7 @@ export const Content = styled.div`
   
 `
 
+const color = '#336699'
 export const query = graphql`
 query LayoutQuery {
   site {
@@ -43,12 +45,22 @@ query LayoutQuery {
     }
   }
   background: imageSharp(id: { regex: "/background.jpg/" }) {
-    sizes(maxWidth: 1280, duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#86C8E8", shadow: "#99CA55", opacity: 50 }) {
       ...GatsbyImageSharpSizes
     }
   },
   background2: imageSharp(id: { regex: "/background2.jpg/" }) {
-    sizes(maxWidth: 1280, duotone: { highlight: "#0ec4f1", shadow: "#192550", opacity: 50 }) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#86C8E8", shadow: "#99CA55", opacity: 50 }) {
+      ...GatsbyImageSharpSizes
+    }
+  },
+  background3: imageSharp(id: { regex: "/background3.jpg/" }) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#86C8E8", shadow: "#99CA55", opacity: 50 }) {
+      ...GatsbyImageSharpSizes
+    }
+  },
+  background4: imageSharp(id: { regex: "/background4.jpg/" }) {
+    sizes(maxWidth: 1280, duotone: { highlight: "#86C8E8", shadow: "#99CA55", opacity: 50 }) {
       ...GatsbyImageSharpSizes
     }
   },

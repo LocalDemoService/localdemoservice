@@ -11,8 +11,10 @@ const iconSize = () => {
 const Footer = ({ logoSmall }) => {
   return (
     <FooterContainer>
-      <Logo sizes={logoSmall.sizes} style={{ position: 'absolute', left: 15 }} />
       <FooterWidth>
+        <LogoContainer>
+          <Logo sizes={logoSmall.sizes} />
+        </LogoContainer>
         <FooterContact>
           <SLink to={'tel:808-722-5492'}>808-722-5492</SLink>
           <SLink to={'/contact'}>Message Us</SLink>
@@ -63,9 +65,19 @@ const FooterWidth = styled.div`
   }
 `
 
+const LogoContainer = styled.div`
+  position: absolute;
+  left: 15px;
+
+  @media (max-width: ${mq.small}px) {
+    position: static;
+    padding: 10px 0;
+    order: 10;
+  }
+`
+
 const Logo = styled(Img) `
   align-self: center;
-  margin-top: -55px;
   height: 7rem;
   width: 7rem;
 `

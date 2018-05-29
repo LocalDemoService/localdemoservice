@@ -8,11 +8,11 @@ const ContactPage = () => {
     <ContactWrapper>
       <ContactWidth>
         <Contact>
-          <Text>If you would like to meet with us about our services, call us at 
+          <Text>If you would like to meet with us about our services, call us at
           <br />
-          <a href='tel:808-722-5492'>808-722-5492</a>
-          <br />
-          or send us a message below.</Text>
+            <a href='tel:808-722-5492'>808-722-5492</a>
+            <br />
+            or send us a message below.</Text>
         </Contact>
       </ContactWidth>
     </ContactWrapper>
@@ -33,7 +33,7 @@ const ContactWrapper = styled.div`
 `
 
 const ContactWidth = styled.div`
-  width: 25%;
+  width: 50%;
 `
 
 export default ContactPage;
