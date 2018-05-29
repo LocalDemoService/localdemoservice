@@ -35,7 +35,6 @@ export const Content = styled.div`
   
 `
 
-const color = '#336699'
 export const query = graphql`
 query LayoutQuery {
   site {

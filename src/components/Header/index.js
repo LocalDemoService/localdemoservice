@@ -65,7 +65,6 @@ class Header extends Component {
     this.rotateImage()
   }
 
-
   rotateImage = () => {
     const { backgroundImages } = this.state
     let currentImageIndex = 0;
@@ -85,7 +84,6 @@ class Header extends Component {
   render() {
     const { data } = this.props
     const { backgroundImage } = this.state
-    console.log(data[backgroundImage.image], backgroundImage)
     return (
       <HeaderContainer
         ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
