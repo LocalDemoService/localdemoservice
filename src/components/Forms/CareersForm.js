@@ -29,7 +29,7 @@ const CareersForm = () => {
         </Input>
         <Input>
           <label>Attach Resume</label>
-          <input type='file' />
+          <input type="file" />
         </Input>
         <Input>
           <label>Cover Letter</label>

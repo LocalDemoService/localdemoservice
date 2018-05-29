@@ -92,7 +92,9 @@ class Header extends Component {
           position={backgroundImage.position ? backgroundImage.position : 'center'} >
           <HeaderBody>
             <Link to={'/'}>
-              <Image sizes={data.logo.sizes} />
+              <LogoContainer>
+                <Image src={data.logo.sizes.src} />
+              </LogoContainer>
             </Link>
             <HeaderLink style={{ marginTop: -50 }}>
               <Link
@@ -158,7 +160,13 @@ const HeaderBody = styled.div`
   padding-top: 50px;
 `
 
-const Image = styled(Img) `
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const Image = styled.img`
   width: 250px;
   margin: 0 auto;
 
