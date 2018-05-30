@@ -7,11 +7,11 @@ const CareersForm = () => {
     <CareerFormWrapper>
       <Title>Contact Us</Title>
       <form
-        name="careers2"
+        name="careers3"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="careers2" />
+        <input type="hidden" name="form-name" value="careers3" />
 
         <Input>
           <label>Name</label>
