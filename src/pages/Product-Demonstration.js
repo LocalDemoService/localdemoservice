@@ -22,7 +22,7 @@ const ProductDemonstration = () => {
         <ul>
           {services.map(service => <li key={service}>{service}</li>)}
         </ul>
-        <p>Interested in hearing more about Product Demonstration? Fill in the ‘Contact Form’ to the right and ask about our Demo program!</p>
+        <p>Interested in hearing more about Product Demonstration? Fill in the ‘Contact Form’ and ask about our Demo program!</p>
       </MainColumn>
       <SideColumn>
         <Contact />

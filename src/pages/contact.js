@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
 import Contact from '../components/Forms/Contact'
-import { HomePageWrapper, Border, colors } from '../components/styled/common'
+import { MainColumn, Border, colors } from '../components/styled/common'
 
 const ContactPage = () => {
   return (
     <ContactWrapper>
-      <ContactWidth>
+      <MainColumn>
         <Contact>
           <Text>If you would like to meet with us about our services, call us at
           <br />
@@ -14,7 +14,7 @@ const ContactPage = () => {
             <br />
             or send us a message below.</Text>
         </Contact>
-      </ContactWidth>
+      </MainColumn>
     </ContactWrapper>
   );
 };
@@ -33,7 +33,6 @@ const ContactWrapper = styled.div`
 `
 
 const ContactWidth = styled.div`
-  width: 50%;
 `
 
 export default ContactPage;
