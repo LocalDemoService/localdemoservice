@@ -74,6 +74,10 @@ const ServicesContainer = styled.div`
   font-size: 1rem;
   align-items: center;
 
+  img {
+    border-radius: 5px;
+  }
+
   @media (max-width: ${mq.small}px) {
     flex-direction: column;
     flex-wrap: no-wrap;

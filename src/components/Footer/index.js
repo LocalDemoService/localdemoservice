@@ -26,10 +26,10 @@ const Footer = ({ logoSmall }) => {
           <SLink to={'/careers'}>Careers</SLink>
         </FooterLinks>
         <FooterSocial>
-          <SLink to={'https://www.facebook.com/LocalDemoService'}><FaFacebookSquare /></SLink>
-          <SLink to={'https://www.linkedin.com/company/local-demo-service/'}><FaLinkedin /></SLink>
-          <SLink to={'https://twitter.com/LocalDemoServic'}><FaTwitter /></SLink>
-          <SLink to={'https://www.instagram.com/localdemoservice/'}><FaInstagram /></SLink>
+          <a href='https://www.facebook.com/LocalDemoService'><FaFacebookSquare /></a>
+          <a href='https://www.linkedin.com/company/local-demo-service/'><FaLinkedin /></a>
+          <a href='https://twitter.com/LocalDemoServic'><FaTwitter /></a>
+          <a href='https://www.instagram.com/localdemoservice/'><FaInstagram /></a>
         </FooterSocial>
       </FooterWidth>
     </FooterContainer>
@@ -51,7 +51,7 @@ const FooterContainer = styled.div`
   }
 `
 const FooterWidth = styled.div`
-  width: 65%;
+  width: ${mq.large}px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
