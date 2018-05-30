@@ -16,13 +16,13 @@ const Footer = ({ logoSmall }) => {
           <Logo sizes={logoSmall.sizes} />
         </LogoContainer>
         <FooterContact>
-          <SLink to={'tel:808-722-5492'}>808-722-5492</SLink>
+          <a href={'tel:808-722-5492'}>808-722-5492</a>
           <SLink to={'/contact'}>Message Us</SLink>
         </FooterContact>
         <FooterLinks>
           <SLink to={'/about'}>About</SLink>
           <SLink to={'/locations'}>Locations</SLink>
-          <SLink to={'/meet-the-team'}>Meet The Team</SLink>
+          <SLink to={'/team'}>Meet The Team</SLink>
           <SLink to={'/careers'}>Careers</SLink>
         </FooterLinks>
         <FooterSocial>
@@ -48,6 +48,7 @@ const FooterContainer = styled.div`
   a {
     color: #333;
     padding: 0 5px;
+    text-decoration: none;
   }
 `
 const FooterWidth = styled.div`

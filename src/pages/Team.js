@@ -7,8 +7,8 @@ import Card from "../components/Team/Card";
 const teamMembers = [
   {
     name: "Matthew Kubik",
-    role: "Owner",
-    bio: "Do ex quis ut fugiat irure consequat consequat commodo consectetur consectetur ut ex occaecat in. Eu occaecat nulla commodo duis velit aute minim. Esse est sint incididunt deserunt quis magna adipisicing esse do consequat eu commodo esse. Qui proident velit officia veniam velit elit anim sit commodo consectetur.",
+    role: "Founder and President of Local Demo Service",
+    bio: "His mission is to convert everyday shoppers into sustainable eaters.",
     image: "matthew"
   },
   {

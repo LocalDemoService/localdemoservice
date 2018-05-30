@@ -48,14 +48,12 @@ class Header extends Component {
         },
         {
           image: 'background2',
-          position: 'top'
         },
         {
           image: 'background3',
         },
         {
           image: 'background4',
-          position: 'bottom'
         }
       ]
     }
@@ -78,7 +76,7 @@ class Header extends Component {
           backgroundImage: backgroundImages[currentImageIndex],
         }
       }, () => ++currentImageIndex)
-    }, 3500)
+    }, 1500)
   }
 
   render() {
@@ -149,6 +147,7 @@ const HeaderContainer = styled.div`
 `
 
 const BackgroundContainer = styled.div`
+  transition: background-image 1s ease-in-out;
   background: url(${props => props.backgroundImage}) no-repeat ${props => props.position} center;
   background-size: cover;
 `
