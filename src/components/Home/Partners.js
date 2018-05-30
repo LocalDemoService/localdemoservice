@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Partner from './Partner'
 import ahualoa from '../../images/ahualoa.png'
 import ohi from '../../images/ohi.png'
 import mauiFruit from '../../images/mauiFruit.png'
@@ -14,23 +15,18 @@ import { HomePageWrapper, Border, colors, mq } from '../../components/styled/com
 const partners = [
   {
     image: ahualoa,
-    testimonial: {
-
-    }
+    testimonial: {}
   },
   {
     image: ohi,
-    testimonial: {
-      text: `"Est aute minim ad tempor ipsum mollit Lorem. Aute et pariatur est nisi cillum Lorem esse."`,
-      attribution: `Culpa et do irure eu`
-    }
+    testimonial: {}
   },
   {
     image: mauiFruit,
     testimonial: {
       snippet: `They have achieved success for my business Maui Fruit Jewels`,
       text: `"It has been an honor working with Local Demo Service! They have achieved success for my business Maui Fruit Jewels especially on Oahu. Plus they helped me to get the Hawaiian Seal of Quality for my products! Local Demo Service is a great entity for representing quality local products!"`,
-      attribution: `Chris Ter Horst, Founder of Maui Fruit Jewels'`
+      attribution: `Chris Ter Horst, Founder of Maui Fruit Jewels`
     }
   },
   {
@@ -71,18 +67,6 @@ const partners = [
   }
 ]
 
-const Partner = ({ image, testimonial }) => {
-  return (
-    <PartnerContainer>
-      <PartnerImage>
-        <Image src={image} />
-      </PartnerImage>
-      <Testimonial>
-        {testimonial.snippet && `${testimonial.snippet}...`}
-      </Testimonial>
-    </PartnerContainer>
-  )
-}
 
 const Partners = () => {
   return (
@@ -128,37 +112,5 @@ const PartnersContainer = styled.div`
     flex-wrap: no-wrap;
   }
 `
-
-const PartnerContainer = styled.div`
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-const PartnerImage = styled.div`
-  display: flex;
-`
-
-const Image = styled.img`
-  width: 200px;
-  align-self: center;
-  padding: 15px
-
-  @media (max-width: ${mq.small}px) {
-    width: 150px; 
-    padding: 5px;
-  }
-`
-
-const Testimonial = styled.div`
-  color: ${colors().black};
-  font-size: 14px;
-  width: 65%;
-  font-style: italic;
-  text-align: center;
-`
-
-
 
 export default Partners;
