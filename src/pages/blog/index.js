@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
-import { Title, SubpageWrapper, MainColumn, SideColumn, Border, colors } from "../../components/styled/common";
+import { Title, SubpageWrapper, MainColumn, SideColumn, Border, colors, mq } from "../../components/styled/common";
 import Contact from "../../components/Forms/Contact";
 import PostListing from "../../components/Posts/PostListing";
 
@@ -23,6 +23,11 @@ const Blog = ({ data }) => {
 
 const PostContainer = styled.div`
   justify-content: flex-start;
+
+  @media (max-width: ${mq.small}px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const query = graphql`

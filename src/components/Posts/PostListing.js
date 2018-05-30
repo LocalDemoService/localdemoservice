@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import { SLink, colors } from '../styled/common'
+import { SLink, colors, mq } from '../styled/common'
 
 const PostListing = ({ post }) => (
   <Article>
@@ -16,8 +16,14 @@ const PostListing = ({ post }) => (
   </Article>
 );
 
-const Article = styled.article`
+const Article = styled.div`
   padding: 15px 50px;
+  
+  @media (max-width: ${mq.small}px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const PostTitle = styled.h3`

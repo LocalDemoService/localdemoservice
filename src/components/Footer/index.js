@@ -51,7 +51,7 @@ const FooterContainer = styled.div`
   }
 `
 const FooterWidth = styled.div`
-  width: 65%;
+  width: ${mq.large}px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

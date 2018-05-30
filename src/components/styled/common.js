@@ -53,7 +53,7 @@ export const MainColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  min-height: calc(100vh - 8rem - 699px);
   p, small {
     width: 70%;
   }

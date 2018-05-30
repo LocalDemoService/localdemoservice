@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { SubpageWrapper, MainColumn, SideColumn, Column, Title } from '../components/styled/common'
+import { SubpageWrapper, MainColumn, SideColumn, Column, Title, mq } from '../components/styled/common'
 import Contact from '../components/Forms/Contact'
 
 class BlogPage extends Component {
@@ -15,7 +15,7 @@ class BlogPage extends Component {
             <Date>{data.markdownRemark.frontmatter.date}</Date>
             <div dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html
-            }}></div>
+            }} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}></div>
           </FlexStart>
         </MainColumn>
         <SideColumn>
@@ -28,9 +28,19 @@ class BlogPage extends Component {
 
 const FlexStart = styled(Column) `
   width: 100%;
+  display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media (max-width: ${mq.small}px) {
+    align-items: flex-end;
+    justify-content: center;
+  }
 `
+
+const Date = styled.div`
+  padding: 25px 0px 25px;
+`;
 
 export default BlogPage;
 
@@ -51,6 +61,3 @@ export const query = graphql`
   }
 `;
 
-const Date = styled.div`
-  padding: 25px 0px 25px;
-`;
