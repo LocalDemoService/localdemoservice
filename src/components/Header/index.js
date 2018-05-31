@@ -76,7 +76,7 @@ class Header extends Component {
           backgroundImage: backgroundImages[currentImageIndex],
         }
       }, () => ++currentImageIndex)
-    }, 1500)
+    }, 4000)
   }
 
   render() {
