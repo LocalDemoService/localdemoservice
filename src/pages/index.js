@@ -8,8 +8,8 @@ import { HomePageWrapper } from '../components/styled/common'
 const IndexPage = ({ data }) => {
   return (
     <React.Fragment>
-      <Services data={data} />
       <Welcome />
+      <Services data={data} />
       <Partners data={data} />
     </React.Fragment>
   )
