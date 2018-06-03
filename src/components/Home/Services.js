@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
-import { HomePageWrapper, Border, SLink, Title, colors, mq } from '../styled/common'
+import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 
-const services = [
+export const services = [
   {
     name: 'Product Demonstration',
     image: 'demo',
@@ -43,22 +43,20 @@ const Service = ({ name, image }) => {
 
 const Services = ({ data }) => {
   return (
-    <Border topColor={colors(.5).green} bottomColor={colors(.5).blue}>
-      <BackgroundContainer backgroundImage={data.bgImage.sizes.src}>
-        <HomePageWrapper>
-          <STitle>Our Services</STitle>
-          <ServicesContainer>
-            {services.map(service => (
-              <SLink to={service.url} key={service.name + service.image}>
-                <Service
-                  name={service.name}
-                  image={data[service.image]} />
-              </SLink>
-            ))}
-          </ServicesContainer>
-        </HomePageWrapper>
-      </BackgroundContainer>
-    </Border>
+    <BackgroundContainer backgroundImage={data.bgImage.sizes.src}>
+      <HomePageWrapper>
+        <STitle>Our Services</STitle>
+        <ServicesContainer>
+          {services.map(service => (
+            <SLink to={service.url} key={service.name + service.image}>
+              <Service
+                name={service.name}
+                image={data[service.image]} />
+            </SLink>
+          ))}
+        </ServicesContainer>
+      </HomePageWrapper>
+    </BackgroundContainer>
   )
 }
 

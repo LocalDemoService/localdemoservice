@@ -15,6 +15,10 @@ const nav = [
     path: '/about'
   },
   {
+    name: 'Services',
+    path: '/services-page'
+  },
+  {
     name: 'Blog',
     path: '/blog'
   },

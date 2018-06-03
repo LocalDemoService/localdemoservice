@@ -84,7 +84,7 @@ const Testimonial = styled.div`
 `
 
 const FullTestimonial = styled.div`
-  font-size: 1.25rem;
+  font-size: 1rem;
   width: 75%;
   margin: 5px auto 25px;
 `
@@ -99,7 +99,8 @@ const Attribution = styled.div`
 const modalStyle = {
   position: 'fixed',
   zIndex: 1040,
-  top: 0, bottom: 0, left: 0, right: 0
+  top: 0, bottom: 0, left: 0, right: 0,
+  overflow: 'scroll',
 };
 
 const backdropStyle = {
@@ -117,6 +118,7 @@ const dialogStyle = function () {
 
   return {
     position: 'absolute',
+    fontSize: '1.1rem',
     width: 400,
     top: top + '%', left: left + '%',
     transform: `translate(-${top}%, -${left}%)`,

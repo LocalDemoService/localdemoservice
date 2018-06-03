@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { SubpageWrapper, MainColumn, SideColumn, Title } from '../components/styled/common'
+import { SubpageWrapper, MainColumn, SideColumn, Title, colors } from '../components/styled/common'
 import CareersForm from '../components/Forms/CareersForm'
 
 // format:
@@ -75,7 +75,11 @@ const Openings = styled.div`
 
 const JobContainer = styled.div`
   margin: 25px 25px;
-  width: 80%;
+  padding: 15px 25px;
+  border: 3px solid ${colors(0.1).black};
+  border-radius: 2px;
+  width: 65%;
+
 `
 
 const Location = styled.div`

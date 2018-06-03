@@ -130,7 +130,6 @@ export const Button = styled.button`
     outline-offset: -4px;
   }
   
-
   button:active {
     transform: scale(0.99);
   }
@@ -139,7 +138,7 @@ export const Button = styled.button`
 export const Title = styled.div`
   text-align: center;
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 400;
   padding-bottom: 25px;
   align-self: center;
 `;

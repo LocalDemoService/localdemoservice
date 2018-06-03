@@ -13,7 +13,7 @@ const Footer = ({ logoSmall }) => {
     <FooterContainer>
       <FooterWidth>
         <LogoContainer>
-          <Logo sizes={logoSmall.sizes} />
+          <SLink to={'/'}><Logo sizes={logoSmall.sizes} /></SLink>
         </LogoContainer>
         <FooterContact>
           <a href={'tel:808-722-5492'}>808-722-5492</a>
