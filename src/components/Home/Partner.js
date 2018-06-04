@@ -50,6 +50,7 @@ class Partner extends Component {
 
 const PartnerContainer = styled.div`
   max-width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,9 +58,17 @@ const PartnerContainer = styled.div`
 
 const PartnerImage = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  img {
+    width: 200px;
+    align-self: center;
+  }
 `
 
 const Image = styled.img`
+  flex: 1;  
   width: 200px;
   align-self: center;
   padding: 15px;
@@ -73,6 +82,7 @@ const Image = styled.img`
 const Testimonial = styled.div`
   color: ${colors().black};
   font-size: 14px;
+  flex: 1;
   width: 65%;
   font-style: italic;
   text-align: center;
@@ -80,6 +90,10 @@ const Testimonial = styled.div`
   &:hover {
     cursor: pointer;
     color: ${colors(0.5).black};
+  }
+
+  @media (max-width: ${mq.small}px) {
+    padding-bottom: 10px;
   }
 `
 

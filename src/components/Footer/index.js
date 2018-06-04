@@ -58,7 +58,7 @@ const FooterWidth = styled.div`
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  min-height: 8rem;
+  min-height: 8.75rem;
 
   @media (max-width: ${mq.small}px) {
     flex-direction: column;

@@ -12,12 +12,6 @@ body {
 }
 
 
-input[type="file"] {
-  /* display: none; */
-  /* opacity: 0; */
-  /* overflow: hidden; */
-}
-
 @media only screen and (max-width: 480px) {
   html {
     font-size: 70%;

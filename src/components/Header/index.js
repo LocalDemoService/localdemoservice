@@ -98,13 +98,13 @@ class Header extends Component {
                 <Image src={data.logo.sizes.src} />
               </LogoContainer>
             </Link>
-            <HeaderLink style={{ marginTop: -50 }}>
+            <HeaderLink style={{ marginTop: -50, textTransform: 'uppercase', fontWeight: 800 }}>
               <Link
                 to="/"
                 style={{
                   color: '#fff',
                   textShadow: `1px 1px 1px #ccc,
-                  3px 3px 5px #777`,
+                3px 3px 5px #777`,
                   fontSize: '3rem',
                   textDecoration: 'none',
                   letterSpacing: '1rem',

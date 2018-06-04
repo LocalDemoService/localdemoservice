@@ -32,7 +32,7 @@ const CardContainer = styled(Row) `
 `;
 
 const Image = styled(Img) `
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
   margin: 10px 10px;
 

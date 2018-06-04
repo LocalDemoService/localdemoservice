@@ -31,12 +31,9 @@ const Aside = styled(Column) `
   small {
     font-size: 0.85rem;
     width: 45%;
-    margin-top: -50px;
     color: ${colors().blue}
   }
-  img {
-    margin-top: -30px;
-  }
+
 
 `
 

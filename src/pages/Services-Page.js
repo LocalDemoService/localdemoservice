@@ -1,23 +1,28 @@
 import React from "react";
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import { SubpageWrapper, MainColumn, SideColumn, Title, Row, colors, mq } from "../components/styled/common";
+import Link from 'gatsby-link'
+import { SubpageWrapper, MainColumn, SideColumn, Title, Row, Column, SLink, colors, mq } from "../components/styled/common";
 import Contact from "../components/Forms/Contact";
 import Card from "../components/Team/Card";
 import Services, { services } from '../components/Home/Services'
 
 const Service = ({ service, image }) => {
+  console.log(image)
   return (
     <CardContainer>
-      <Img sizes={image} />
-      <Name>{service.name}</Name>
-
+      <Image sizes={image.sizes} />
+      <TextContainer>
+        <SLink to={service.url}>
+          <Name>{service.name}</Name>
+        </SLink>
+        <Text>{service.text}</Text>
+      </TextContainer>
     </CardContainer>
   )
 }
 
 const ServicesPage = ({ data }) => {
-  console.log(data)
   return (
     <SubpageWrapper>
       <MainColumn>
@@ -36,7 +41,9 @@ const CardContainer = styled(Row) `
   margin: 15px 50px;
   padding: 15px 25px;
   border: 3px solid ${colors(0.1).black};
+  border-radius: 2px;
   width: 65%;
+  flex-direction: row;
   
   @media (max-width: ${mq.large}px) {
     flex-direction: column;
@@ -44,23 +51,24 @@ const CardContainer = styled(Row) `
 `;
 
 const Image = styled(Img) `
-  width: 200px;
+  width: 150px;
   border-radius: 5px;
   margin: 10px 10px;
-
-  @media (max-width: ${mq.small}px) {
-    width: 150px;
-  }
 `;
 
-const TextContainer = styled.div`
-  padding-left: 10px;
+const TextContainer = styled(Column) `
+  padding-left: 50px;
+  max-width: 65%;
+  align-self: center;
 `
 
 const Name = styled.div`
-  flex: 1;
   font-size: 1.25rem;
 `;
+
+const Text = styled.p`
+
+`
 
 const Role = styled.div`
   font-style: italic;

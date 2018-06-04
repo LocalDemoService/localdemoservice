@@ -77,11 +77,11 @@ export const SideColumn = styled.div`
 
 export const SubpageWrapper = props => <MultiColumnWrapper {...props} />;
 
-const BorderTop = styled.div`
+export const BorderTop = styled.div`
   border-top: 4px solid ${props => props.color};
 `;
 
-const BorderBottom = styled.div`
+export const BorderBottom = styled.div`
   border-bottom: 4px solid ${props => props.color};
 `;
 

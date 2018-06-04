@@ -64,7 +64,7 @@ query LayoutQuery {
     }
   },
   logo: imageSharp(id: { regex: "/logo.png/" }) {
-    sizes(maxWidth: 400) {
+    sizes(maxWidth: 600) {
       ...GatsbyImageSharpSizes
     }
   }

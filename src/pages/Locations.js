@@ -77,7 +77,6 @@ const LocationWrapper = styled(Column) `
   width: 65%;
 
   @media (min-width: ${mq.small}px) {
-    width: 400px;
     margin-top: 25px;
   }
 
@@ -88,9 +87,14 @@ const TextContainer = styled.div`
 `
 
 const Name = styled.div`
-  flex: 1;
+  align-self: flex-start;
+  margin-left: 100px;
   font-size: 1.5rem;
   font-weight: 400;
+
+  @media (max-width: ${mq.small}px) {
+    margin-left: 50px;
+  }
 `
 
 const Place = styled.li`
@@ -100,7 +104,10 @@ const Place = styled.li`
   padding: 5px 0;
   text-align: left;
   padding-left: 50px;
-  font-weight: 400;
+
+  @media (max-width: ${mq.small}px) {
+    padding-left: 0;
+  }
 `
 
 export default Locations;

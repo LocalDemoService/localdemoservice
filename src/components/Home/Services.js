@@ -7,26 +7,31 @@ import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 export const services = [
   {
     name: 'Product Demonstration',
+    text: 'Ut proident sit nulla aliqua adipisicing ad ex cillum nisi nisi voluptate commodo.',
     image: 'demo',
     url: '/product-demonstration'
   },
   {
     name: 'Tandem Demos',
+    text: 'Non duis pariatur enim ad reprehenderit ullamco nulla fugiat aliquip exercitation amet laborum.',
     image: 'yinYangCoffee',
     url: '/tandem-demos'
   },
   {
     name: 'Brokerage',
+    text: 'Culpa cillum incididunt commodo cupidatat incididunt et.',
     image: 'handshake',
     url: '/brokerage'
   },
   {
     name: 'Merchandising',
+    text: 'Irure magna elit sit laborum ex proident qui labore ullamco laboris.',
     image: 'coffeeShelf',
     url: '/merchandising'
   },
   {
     name: 'Marketing & Sales Consultation',
+    text: 'Sit pariatur consectetur sunt aute in laboris tempor.',
     image: 'marketing',
     url: '/marketing'
   }

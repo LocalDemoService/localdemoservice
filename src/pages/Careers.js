@@ -79,16 +79,22 @@ const JobContainer = styled.div`
   border: 3px solid ${colors(0.1).black};
   border-radius: 2px;
   width: 65%;
-
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Location = styled.div`
   font-size: 1.25rem;
+  font-weight: 400;
 `
 
 const JobTitle = styled.div`
   font-size: 1.5rem;
-  padding-top: 5px;
+  padding: 5px 0;
+  font-weight: 400;
 `
 
 export default Careers;
