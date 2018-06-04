@@ -2,17 +2,26 @@ import React from 'react';
 import styled from 'styled-components'
 import { Button, Input, Title, colors } from '../styled/common'
 
+
+// const blah = () => (
+//   <form name="new-contact-test" action="/" netlify=>
+// <p><label>Email: <input name="email"></label></p>
+// <p><label>Message: <textarea name="message"></textarea></label></p>
+// <p><label>file!<input type="file" name="pic"></input></label></p>
+// </form>
+// )
+
 const CareersForm = () => {
   return (
     <CareerFormWrapper>
       <Title>Contact Us</Title>
       <form
-        name="careers4"
+        name="careers"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         enctype="multipart/form-data">
-        <input type="hidden" name="form-name" value="careers4" />
+        <input type="hidden" name="form-name" value="careers" />
 
         <Input>
           <label>Name</label>
@@ -30,7 +39,7 @@ const CareersForm = () => {
         </Input>
         <Input>
           <label>Attach Resume</label>
-          <input type="file" />
+          <input type="file" name="resume" />
         </Input>
         <Input>
           <label>Cover Letter</label>
