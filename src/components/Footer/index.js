@@ -21,8 +21,8 @@ const Footer = ({ logoSmall }) => {
         </FooterContact>
         <FooterLinks>
           <SLink to={'/about'}>About</SLink>
+          <SLink to={'/services-page'}>Services</SLink>
           <SLink to={'/locations'}>Locations</SLink>
-          <SLink to={'/team'}>Meet The Team</SLink>
           <SLink to={'/careers'}>Careers</SLink>
         </FooterLinks>
         <FooterSocial>
