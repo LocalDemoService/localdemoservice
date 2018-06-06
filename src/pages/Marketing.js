@@ -7,7 +7,8 @@ const Marketing = () => {
     <SubpageWrapper>
       <MainColumn>
         <Title>Marketing with Local Demo Service</Title>
-        <p>Looking for other ways to market and sell your brand? We offer full-service marketing through Local Demo Service and/or third party partnerships. Contact us for all of your marketing needs, including On-site representation, brokerage, branding, graphic design, digital, etc. for recommendations from experts!</p>
+        <p>Looking for other ways to market and sell your brand? We offer full-service marketing through Local Demo Service and/or third party partnerships. We can help you with On-site representation, brokerage, branding, graphic design, digital, etc.</p>
+    <p> Interested in hearing Marketing Consultation rates? Call us at 808-722-5492 or fill in the ‘Contact Form’ to the right and ask about our referral program! </p>
       </MainColumn>
       <SideColumn>
         <Contact />

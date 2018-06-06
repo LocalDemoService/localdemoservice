@@ -6,9 +6,9 @@ import Card from "../components/Team/Card";
 
 const teamMembers = [
   {
-    name: "Matthew Kubik",
+    name: "Matthew Kubick",
     role: "Founder and President of Local Demo Service",
-    bio: "His mission is to convert everyday shoppers into sustainable eaters.",
+    bio: "Matthew and his wife, Danielle, (Co-Founder and CCO) launched Local Demo Service in 2015. Their mission is to convert everyday shoppers into sustainable eaters to perpetuate a healthier population, environment, and world. Matthew has been involved in health and sustainability since his teenage years as an athletic coach, brand ambassador, salesman, and entrepeneur.",
     image: "matthew"
   },
   {

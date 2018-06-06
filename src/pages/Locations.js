@@ -6,15 +6,15 @@ import Contact from '../components/Forms/Contact'
 const locations = {
   sandpoint: {
     city: 'Sandpoint, Idaho',
-    places: ['Super1 Foods', 'Winter Ridge Groceries', 'Yokes Fresh Market']
+    places: ['Super1 Foods', 'Winter Ridge Groceries', 'Yokes Fresh Market', 'Safeway']
   },
   maui: {
     city: 'Maui, Hawaii',
-    places: ['Mana Foods', 'Maui Farmers', 'Market Lahaina']
+    places: ['Mana Foods', 'Maui Farmers', 'Farmers Market Lahaina', 'Whole Foods', 'Foodland', 'Down to Earth']
   },
   oahu: {
     city: 'Oahu, Hawaii',
-    places: ['Whole Foods', 'Down to earth', 'Foodland/R.Field', 'Kokua Market', 'Dole Plantation']
+    places: ['Whole Foods', 'Down to earth', 'Foodland/R.Field', 'Kokua Market', 'Dole Plantation', 'Hallmark', 'Neiman Marcus', 'Safeway']
   },
   spokane: {
     city: 'Spokane, Washington',
@@ -22,11 +22,11 @@ const locations = {
   },
   coeurdalene: {
     city: `Couer d'Alene, Idaho`,
-    places: ['Natural Grocers', 'Safeway', `Huckleberry's`]
+    places: ['Natural Grocers', 'Safeway', `Huckleberry's`, 'Pilgrims']
   },
   sanFransico: {
     city: 'San Francisco, California',
-    places: ['Rainbow Grocers', 'Whole Foods']
+    places: ['Rainbow Grocers', 'Whole Foods', 'Pharmaca']
   },
   farmington: {
     city: 'Farmington, New Mexico',
@@ -34,7 +34,7 @@ const locations = {
   },
   durango: {
     city: 'Durango, Colorado',
-    places: ['Natural Grocers']
+    places: ['Natural Grocers', `Nature's Oasis`, 'Durango Natural Foods Coop']
   }
 }
 
@@ -53,7 +53,7 @@ const Locations = () => {
     <SubpageWrapper>
       <MainColumn>
         <Title>Locations</Title>
-        <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, and California. Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can train someone in that area!</p>
+        <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, California, New Mexico, Montana, Colorado, and more! Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can meet your marketing needs!</p>
         {Object.keys(locations).map(l => (
           <Location key={l.location} location={locations[l]} />
         ))}

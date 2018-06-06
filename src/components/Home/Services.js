@@ -7,31 +7,31 @@ import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 export const services = [
   {
     name: 'Product Demonstration',
-    text: 'Ut proident sit nulla aliqua adipisicing ad ex cillum nisi nisi voluptate commodo.',
+    text: 'We can sample out your products in stores through our demo service. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
     image: 'demo',
     url: '/product-demonstration'
   },
   {
     name: 'Tandem Demos',
-    text: 'Non duis pariatur enim ad reprehenderit ullamco nulla fugiat aliquip exercitation amet laborum.',
+    text: 'An affordable way to increase exposure and overall sales through shared demos.',
     image: 'yinYangCoffee',
     url: '/tandem-demos'
   },
   {
     name: 'Brokerage',
-    text: 'Culpa cillum incididunt commodo cupidatat incididunt et.',
+    text: 'We can get your products into more store(s)! Buyers take our products because we ensure sales through demo support.',
     image: 'handshake',
     url: '/brokerage'
   },
   {
     name: 'Merchandising',
-    text: 'Irure magna elit sit laborum ex proident qui labore ullamco laboris.',
+    text: 'Keep your displays looking professional! Send one of our specialists into the store(s) of your choice to stock the shelf, improve aesthetics, place orders, and report back on other details.',
     image: 'coffeeShelf',
     url: '/merchandising'
   },
   {
     name: 'Marketing & Sales Consultation',
-    text: 'Sit pariatur consectetur sunt aute in laboris tempor.',
+    text: 'Looking for other ways to market and sell your brand? Contact us for all of your marketing needs!',
     image: 'marketing',
     url: '/marketing'
   }

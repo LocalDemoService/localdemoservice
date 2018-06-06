@@ -12,14 +12,14 @@ import CareersForm from '../components/Forms/CareersForm'
 
 const jobOpenings = [
   {
-    location: 'Oahu, Hawaii',
+    location: 'Big Island, Hawaii',
     title: 'Product Demonstration',
-    description: 'Est est nulla non et exercitation minim do consectetur. Commodo sunt sunt minim duis. Officia commodo esse nulla sunt. Magna ea culpa adipisicing exercitation aliquip deserunt eiusmod nulla et officia deserunt veniam veniam.'
+    description: 'Local Demo Service is looking for demo specialists who can cover Hilo & Kona area. If you can cover one or both of these areas, please send your resume!'
   },
   {
-    location: 'Sandpoint, Idaho',
+    location: 'Spokane, Washington',
     title: 'Product Demonstration',
-    description: 'Est est nulla non et exercitation minim do consectetur. Commodo sunt sunt minim duis. Officia commodo esse nulla sunt. Magna ea culpa adipisicing exercitation aliquip deserunt eiusmod nulla et officia deserunt veniam veniam.'
+    description: 'Local Demo Service is looking for a demo specialist in Spokane Washington! Covering CDA is preferred but not required. For all qualified participants, please send your resume!'
   }
 ]
 
