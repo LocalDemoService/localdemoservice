@@ -7,13 +7,13 @@ import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 export const services = [
   {
     name: 'Product Demonstration',
-    text: 'Our specialty is representing you where you can’t be. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos for social media purpose and for visuals of your shelf space, negotiate product shifts, gain analytics through demo reports.',
+    text: 'Our specialty is representing you where you can’t be. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
     image: 'demo',
     url: '/product-demonstration'
   },
   {
     name: 'Tandem Demos',
-    text: 'An affordable way to increase exposure and overall sales is through our tandem demo system. We sample and sell your products alongside another tandem partner.',
+    text: 'An affordable way to increase exposure and overall sales through shared demos.',
     image: 'yinYangCoffee',
     url: '/tandem-demos'
   },
@@ -25,7 +25,7 @@ export const services = [
   },
   {
     name: 'Merchandising',
-    text: 'Keep your displays looking professional! Send one of our specialists into the store(s) of your choice to stock the shelf, make the display look aesthetically pleasing, and report back any products that need ordering to you and to the buyer.',
+    text: 'Keep your displays looking professional! Send one of our specialists into the store(s) of your choice to stock the shelf, improve aesthetics, place orders, and report back on other details.',
     image: 'coffeeShelf',
     url: '/merchandising'
   },
