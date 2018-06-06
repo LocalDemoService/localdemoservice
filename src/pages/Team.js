@@ -6,7 +6,7 @@ import Card from "../components/Team/Card";
 
 const teamMembers = [
   {
-    name: "Matthew Kubik",
+    name: "Matthew Kubick",
     role: "Founder and President of Local Demo Service",
     bio: "His mission is to convert everyday shoppers into sustainable eaters.",
     image: "matthew"
