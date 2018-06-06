@@ -10,7 +10,7 @@ const About = () => {
       <MainColumn>
         <Title>About Local Demo Service</Title>
         <p>
-          Local Demo Service started in November of 2015 serving local Hawaiian grown beverages at farmers markets to support inter-island sustainability. Hawaii imports approximately 90% of all consumable goods so our mission was to get local products into local peoples hands at all costs. Our local Hawaiian producers expressed a need for demos at grocery outlets so we began sampling Kau coffee, Big Island macadamia nuts, and other local Hawaiian products at Whole Foods and other health-food stores. 
+          Local Demo Service started in 2015 serving local Hawaiian grown beverages at farmers markets to support inter-island sustainability. Hawaii imports approximately 90% of all consumable goods so our mission was to get local products into local peoples hands at all costs. Our local Hawaiian producers expressed a need for demos at grocery outlets so we began sampling Kau coffee, Big Island macadamia nuts, and other local Hawaiian products at Whole Foods and other health-food stores. 
     </p>
     <p>
     Entering the grocery industry, we found a lack of sustainable trends: Food travels
