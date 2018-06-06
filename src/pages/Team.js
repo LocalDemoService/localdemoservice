@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Matthew Kubick",
     role: "Founder and President of Local Demo Service",
-    bio: "His mission is to convert everyday shoppers into sustainable eaters.",
+    bio: "His mission is to convert everyday shoppers into sustainable eaters. Matthew has been involved in health and sustainability since his teenage years as an athletic coach, brand ambassador, salesman, and entrepeneur. He and his wife, Danielle, are expecting their first child in October who will be named Joshua!",
     image: "matthew"
   },
   {
