@@ -19,7 +19,7 @@ const About = () => {
           <SourceLink href='https://www.ota.com/resources/market-analysis'> mere 5.3% of the food sales</SourceLink> in the United States as of 2017
           , the <SourceLink href='https://www.theguardian.com/environment/2017/mar/13/waste-plastic-food-packaging-recycling-throwaway-culture-dave-hall'> vast majority of food packaging is not recycled</SourceLink>
           , etc. </p>
-    <p>Our findings led us to our purpose: to support sustainably-focused products to build a more sustainable and forward thinking food economy. Our goal is to represent any of the following types of products: Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products.
+    <p>Our findings led us to our purpose: to support sustainably-focused products to build a more sustainable and forward thinking food economy. Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products.
         </p>
       </MainColumn>
       <SideColumn>
