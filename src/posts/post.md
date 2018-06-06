@@ -1,13 +1,17 @@
 ---
-title: "Welcome to Local Demo Service"
-description: "New blog post"
+title: Welcome to Local Demo Service
 date: '2018-05-16T13:39:37-07:00'
-thumbnail: ""
-tags: ['Tags']
+description: Welcome!
+thumbnail: /img/cathal-mac-an-bheatha-223618-unsplash.jpg
+tags:
+  - Tags
 ---
+Local Demo Service is proud to welcome you to the launch of the Local Demo Service website and blog!
 
-Ea sunt nulla fugiat nisi in. Irure id nisi sint officia officia cupidatat. Eu sint est ex excepteur excepteur irure minim occaecat culpa duis non incididunt. Excepteur nisi ex aute enim aute voluptate ut qui ut mollit. Veniam id Lorem mollit aliqua qui do tempor do eiusmod adipisicing excepteur irure voluptate sit.
+We believe that sustainable eating is the key to a healthy humanity! We support local, Organic, recycled, charity based, healthy, and/or other sustainably focused products to build a more sustainable and forward thinking food economy.
 
-Ullamco minim amet enim anim amet et incididunt. Veniam do qui culpa excepteur sunt velit cillum irure. Commodo qui tempor ea ex irure qui nostrud.
+The purpose of this blog and website will be to increase our outreach as a company, and to educate our followers. Please feel free to browse our site and review monthly blog posts with research on food and sustainability; plus tips and tricks to increase your ability to make sales for your health food brand!
 
-Cupidatat aliqua labore aute veniam eiusmod quis incididunt eu esse pariatur et ad laboris. Esse ullamco cupidatat sit sint non nisi tempor excepteur irure eu duis non velit qui. Proident dolore cillum Lorem laboris elit amet culpa enim proident cillum eiusmod amet proident. Deserunt eu aliquip exercitation duis esse Lorem commodo culpa nostrud pariatur cillum laboris. Reprehenderit velit culpa mollit quis minim. Labore culpa eiusmod amet eiusmod nulla cillum pariatur ullamco elit aliquip cillum duis. Occaecat aliqua deserunt reprehenderit duis mollit ut duis nulla.
+
+
+Thank you for your continued support!
