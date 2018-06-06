@@ -7,7 +7,7 @@ import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 export const services = [
   {
     name: 'Product Demonstration',
-    text: 'At our demos we can sample out your products in stores. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
+    text: 'We can sample out your products in stores through our demo service. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
     image: 'demo',
     url: '/product-demonstration'
   },
@@ -19,7 +19,7 @@ export const services = [
   },
   {
     name: 'Brokerage',
-    text: 'Do you want to be in more stores? Buyers take our products because we ensure sales through demo support!',
+    text: 'We can get your products into more store(s)! Buyers take our products because we ensure sales through demo support.',
     image: 'handshake',
     url: '/brokerage'
   },
