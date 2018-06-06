@@ -33,7 +33,7 @@ const partners = [
     image: rawkin,
     testimonial: {
       snippet: `I am very pleased with the work from Local Demo Service and highly recommend them`,
-      text: `Local Demo Service has brought Rawkin Raw into new stores such as Hawaii's Down to Earth chain, Winterridge Foods in Idaho, Natural Grocers Durango, Huckleeberry's in the Pacific North West; plus saved our products from being dropped at multiple Natural Grocers. The Natural Grocers buyers from the Farmington New Mexico and Couer d'Alene Idaho locations had less than optimal location for my product so sales were not ideal; leading the buyers to discontinue the product. Local Demo Service jumped in and offered demos continuing Rawkin Raw at these locations plus bringing in new flavors and increasing shelf space. I am very pleased with the work from Local Demo Service and highly recommend them to other Sustainable Food brands!`,
+      text: `Local Demo Service has brought Rawkin Raw into new stores such as Hawaii's Down to Earth chain, Winterridge Foods in Idaho, Natural Grocers Durango, Huckleeberry's in the Pacific North West; plus saved our products from being dropped at multiple Natural Grocers. The Natural Grocers buyers from the Farmington New Mexico and Couer d'Alene Idaho locations had less than optimal location for my product so sales were not ideal; leading the buyers to discontinue the product. Local Demo Service jumped in and offered demos continuing Rawkin Raw at these locations plus bringing in new flavors and increasing shelf space. I am very pleased with the work from Local Demo Service and highly recommend them to other sustainable food brands!`,
       attribution: `Erinn Williams, Founder Rawkin Raw`,
     }
   },
