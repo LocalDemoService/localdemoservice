@@ -53,7 +53,7 @@ const Locations = () => {
     <SubpageWrapper>
       <MainColumn>
         <Title>Locations</Title>
-        <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, California, New Mexico, Montana, and Colorado. Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can train someone in that area!</p>
+        <p>Local Demo Service specialists are located in Hawaii, Idaho, Washington, California, New Mexico, Montana, Colorado, and more! Want demos in another state? Please go to the ‘contact’ page and let us know which state so we can meet your marketing needs!</p>
         {Object.keys(locations).map(l => (
           <Location key={l.location} location={locations[l]} />
         ))}
