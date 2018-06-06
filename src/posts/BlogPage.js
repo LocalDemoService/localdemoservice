@@ -13,6 +13,7 @@ class BlogPage extends Component {
           <FlexStart>
             <Title>{data.markdownRemark.frontmatter.title}</Title>
             <Date>{data.markdownRemark.frontmatter.date}</Date>
+            {data.markdownRemark.frontmatter.thumbnail && <Image sizes={data.markdownRemark.frontmatter.thumbnail} />}
             <div dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html
             }} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}></div>
@@ -56,6 +57,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        thumbnail
       }
     }
   }

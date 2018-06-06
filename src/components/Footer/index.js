@@ -23,7 +23,7 @@ const Footer = ({ logoSmall }) => {
           <SLink to={'/about'}>About</SLink>
           <SLink to={'/services-page'}>Services</SLink>
           <SLink to={'/locations'}>Locations</SLink>
-          <SLink to={'/careers'}>Careers</SLink>
+          <SLink to={'/contact'}>Contact</SLink>
         </FooterLinks>
         <FooterSocial>
           <a href='https://www.facebook.com/LocalDemoService'><FaFacebookSquare /></a>
