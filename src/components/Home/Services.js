@@ -7,7 +7,7 @@ import { HomePageWrapper, Border, SLink, Title, mq } from '../styled/common'
 export const services = [
   {
     name: 'Product Demonstration',
-    text: 'Our specialty is representing you where you can’t be. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
+    text: 'At our demos we can sample out your products in stores. Increase sales, convert new customers, build relationships with buyers, merchandise your shelf space, attain photos, negotiate product shifts, and gain analytics through demo reports.',
     image: 'demo',
     url: '/product-demonstration'
   },
