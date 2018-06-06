@@ -18,9 +18,9 @@ const About = () => {
           , Organic food sales only account for a
           <SourceLink href='https://www.ota.com/resources/market-analysis'> mere 5.3% of the food sales</SourceLink> in the United States as of 2017
           , the <SourceLink href='https://www.theguardian.com/environment/2017/mar/13/waste-plastic-food-packaging-recycling-throwaway-culture-dave-hall'> vast majority of food packaging is not recycled</SourceLink>
-          , etc. </p>
+          , etc. These and other findings determined our direction as a business.</p>
     <p>
-    Our findings led us to our purpose: to support sustainably-focused products to build a more sustainable and forward thinking food economy. Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products.
+    Our purpose is to support sustainably-focused products to build a more sustainable, forward-thinking food economy for a healthier population, environment, and world. Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products.
         </p>
       </MainColumn>
       <SideColumn>
