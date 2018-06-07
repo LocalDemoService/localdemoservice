@@ -11,7 +11,7 @@ const Service = ({ service, image }) => {
   console.log(image)
   return (
     <CardContainer>
-      <Image sizes={image.sizes} />
+      <SLink to={service.url}><Image sizes={image.sizes} /></SLink>
       <TextContainer>
         <SLink to={service.url}>
           <Name>{service.name}</Name>
@@ -54,6 +54,10 @@ const Image = styled(Img) `
   width: 150px;
   border-radius: 5px;
   margin: 10px 10px;
+
+  @media (max-width: ${mq.small}px) {
+    margin: 10px auto;
+  }
 `;
 
 const TextContainer = styled(Column) `

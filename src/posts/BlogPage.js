@@ -10,14 +10,19 @@ class BlogPage extends Component {
     return (
       <SubpageWrapper>
         <MainColumn>
-          <FlexStart>
+          <Position>
             <Title>{data.markdownRemark.frontmatter.title}</Title>
             <Date>{data.markdownRemark.frontmatter.date}</Date>
-            {data.markdownRemark.frontmatter.thumbnail && <Image sizes={data.markdownRemark.frontmatter.thumbnail} />}
-            <div dangerouslySetInnerHTML={{
-              __html: data.markdownRemark.html
-            }} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}></div>
-          </FlexStart>
+            <PostBody>
+              {data.markdownRemark.frontmatter.thumbnail && <Image src={data.markdownRemark.frontmatter.thumbnail} />}
+              <div dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html
+              }} style={{
+                display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
+              }}>
+              </div>
+            </PostBody>
+          </Position>
         </MainColumn>
         <SideColumn>
           <Contact />
@@ -27,16 +32,26 @@ class BlogPage extends Component {
   }
 }
 
-const FlexStart = styled(Column) `
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+const Position = styled(Column) `
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: ${mq.small}px) {
     align-items: flex-end;
     justify-content: center;
   }
+`
+
+const PostBody = styled(Column) `
+  justify-content: center;
+  align-items: center;
+`
+
+const Image = styled.img`
+  margin: 0 auto;
+  margin: 10px 0; 
+  border: 1px solid #000000;
+  width: 300px;
 `
 
 const Date = styled.div`
