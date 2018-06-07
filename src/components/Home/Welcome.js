@@ -8,7 +8,7 @@ const Welcome = () => {
 
       <WelcomeContainer>
         <WelcomeTitle>Welcome</WelcomeTitle>
-        <WelcomeText>Sustainable eating is the key to a healthy world. <br /> Local Demo Service provides on-site marketing and sales for sustainable products at retail outlets across the U.S. including Hawaii, Idaho, Washington, California, New Mexico, Montana, Colorado, and more! Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products. If you are interested in converting shoppers into long term buyers of your sustainable health products, please contact us for more information!</WelcomeText>
+        <WelcomeText>Sustainable eating is the key to a healthy world. <br /> Local Demo Service provides on-site product demonstrations, marketing, and sales for sustainable products at retail outlets across the U.S. including Hawaii, Idaho, Washington, California, New Mexico, Montana, Colorado, and more! Our goal is to represent any of the following types of products: local, Organic, recycled, charity-based, healthy, Fair-Trade, and/or other sustainably focused products. If you are interested in converting shoppers into long term buyers of your sustainable health products, please contact us for more information!</WelcomeText>
       </WelcomeContainer>
     </Border>
   );
