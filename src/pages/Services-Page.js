@@ -36,7 +36,7 @@ const ServicesPage = ({ data }) => {
   );
 };
 
-const CardContainer = styled(Row) `
+const CardContainer = styled(Row)`
   margin: 15px 50px;
   padding: 15px 25px;
   border: 3px solid ${colors(0.1).black};
@@ -49,7 +49,7 @@ const CardContainer = styled(Row) `
   }
 `;
 
-const Image = styled(Img) `
+const Image = styled(Img)`
   width: 150px;
   border-radius: 5px;
   margin: 10px 10px;
@@ -59,18 +59,25 @@ const Image = styled(Img) `
   }
 `;
 
-const TextContainer = styled(Column) `
-  padding-left: 50px;
+const TextContainer = styled(Column)`
   max-width: 65%;
   align-self: center;
+
 `
 
 const Name = styled.div`
   font-size: 1.25rem;
+  padding-left: 10px;
+
+  @media (max-width: ${mq.small}px) {
+    text-align: center;
+  }  
 `;
 
-const Text = styled.p`
-
+const Text = styled.div`
+  padding-top: 10px;
+  max-width: 85%;
+  align-self: center;
 `
 
 const Role = styled.div`
