@@ -8,7 +8,6 @@ import Card from "../components/Team/Card";
 import Services, { services } from '../components/Home/Services'
 
 const Service = ({ service, image }) => {
-  console.log(image)
   return (
     <CardContainer>
       <SLink to={service.url}><Image sizes={image.sizes} /></SLink>
@@ -45,7 +44,7 @@ const CardContainer = styled(Row) `
   width: 65%;
   flex-direction: row;
   
-  @media (max-width: ${mq.large}px) {
+  @media (max-width: ${mq.small}px) {
     flex-direction: column;
   }
 `;

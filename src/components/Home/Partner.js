@@ -19,7 +19,6 @@ class Partner extends Component {
 
   render() {
     const { image, testimonial } = this.props
-    console.log(this.state);
     return (
       <PartnerContainer>
         <PartnerImage>
