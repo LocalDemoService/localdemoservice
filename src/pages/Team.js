@@ -33,7 +33,7 @@ const teamMembers = [
     name: "Katya Fulford",
     role: "Demo Specialist",
     bio: "Northern Idaho, Eastern Washington",
-    image: "Katya"
+    image: "katya"
   }
 ];
 
