@@ -73,7 +73,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    Katya: imageSharp(id: { regex: "/katya.jpeg/" }) {
+    katya: imageSharp(id: { regex: "/katya.jpeg/" }) {
       sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
