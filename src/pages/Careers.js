@@ -12,9 +12,9 @@ import CareersForm from '../components/Forms/CareersForm'
 
 const jobOpenings = [
   {
-    location: 'Big Island, Hawaii',
+    location: 'Oahu, Hawaii',
     title: 'Product Demonstration',
-    description: 'Local Demo Service is looking for demo specialists who can cover Hilo & Kona area. If you can cover one or both of these areas, please send your resume!'
+    description: 'Local Demo Service is looking for demo specialists who can cover Honolulu, Windward-side, West-side, and occassionally Dole Plantation areas. If you can cover one or both of these areas, please send your resume!'
   },
   {
     location: 'Spokane, Washington',
