@@ -28,6 +28,12 @@ const teamMembers = [
     role: "Demo Specialist",
     bio: "Bay Area, California",
     image: "carl"
+  },
+  {
+    name: "Katya Fulford",
+    role: "Demo Specialist",
+    bio: "Northern Idaho, Eastern Washington",
+    image: "katya"
   }
 ];
 
@@ -63,6 +69,11 @@ export const query = graphql`
       }
     }
     ruth: imageSharp(id: { regex: "/ruth.jpg/" }) {
+      sizes(maxWidth: 250, maxHeight: 250) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    katya: imageSharp(id: { regex: "/katya.jpeg/" }) {
       sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
