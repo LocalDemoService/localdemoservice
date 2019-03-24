@@ -17,8 +17,9 @@ const TemplateWrapper = ({ children, data, location }) => (
       meta={[
         { name: 'description', content: `${data.site.siteMetadata.description}` },
         { name: 'keywords', content: 'Local Demo Service, Product Demos In Your Store' },
-      ]}
-    />
+      ]}>
+      <link rel="prefetch" href="background2.jpg" />
+    </Helmet>
     <Header data={data} location={location} />
     <Content>
       {children()}
