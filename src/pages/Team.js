@@ -12,29 +12,17 @@ const teamMembers = [
     image: "matthew"
   },
   {
-    name: "Ruth Stoddard",
-    role: "Demo Specialist",
-    bio: "Oahu, Hawaii",
-    image: "ruth"
-  },
-  {
-    name: "Nohea Jackson",
-    role: "Demo Specialist",
-    bio: "Maui, Hawaii",
-    image: "nohea"
-  },
-  {
-    name: "Carl Rodriguez",
-    role: "Demo Specialist",
-    bio: "Bay Area, California",
-    image: "carl"
-  },
-  {
-    name: "Katya Fulford",
-    role: "Demo Specialist",
+    name: "Matt Lonestar",
+    role: "Director of Operations",
     bio: "Northern Idaho, Eastern Washington",
-    image: "katya"
-  }
+    image: "lonestar"
+  },
+  {
+    name: "Will Gregory",
+    role: "Director of Operations",
+    bio: "Northern Idaho, Eastern Washington",
+    image: "gregory"
+  },
 ];
 
 const Team = ({ data }) => {
@@ -58,22 +46,12 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    nohea: imageSharp(id: { regex: "/nohea.jpg/" }) {
+    lonestar: imageSharp(id: { regex: "/lonestar.jpg/" }) {
       sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
     }
-    carl: imageSharp(id: { regex: "/carl.jpg/" }) {
-      sizes(maxWidth: 250, maxHeight: 250) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    ruth: imageSharp(id: { regex: "/ruth.jpg/" }) {
-      sizes(maxWidth: 250, maxHeight: 250) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    katya: imageSharp(id: { regex: "/katya.jpeg/" }) {
+    gregory: imageSharp(id: { regex: "/willGregory.jpg/" }) {
       sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }

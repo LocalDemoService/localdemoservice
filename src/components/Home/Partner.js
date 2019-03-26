@@ -53,6 +53,7 @@ const PartnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 0;
 `
 
 const PartnerImage = styled.div`

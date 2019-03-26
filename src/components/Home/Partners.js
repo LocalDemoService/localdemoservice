@@ -9,6 +9,9 @@ import jem from '../../images/jem.png'
 import rusty from '../../images/rustys-hawaiian.png'
 import alterEco from '../../images/alter-eco.jpg'
 import maunakea from '../../images/maunakea.png'
+import iggys from '../../images/iggys.png'
+import lairds from '../../images/lairds.png'
+import yerbaMontana from '../../images/yerbaMontana.png'
 import { HomePageWrapper, Border, colors, mq } from '../../components/styled/common'
 
 
@@ -64,6 +67,30 @@ const partners = [
       text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
       snippet: '...increased sales, and received much better placement',
       attribution: 'Kimberly Ino, Founder'
+    }
+  },
+  {
+    image: iggys,
+    testimonial: {
+      text: 'We trust Matthew & Team with the demonstration of our products in multiple states. They are professionals at what they do and we\'re lucky to have found them. Thank you, [Local Demo Service]!',
+      snippet: `We trust Matthew & Team`,
+      attribution: null
+    }
+  },
+  {
+    image: lairds,
+    testimonial: {
+      text: 'Working with Matthew and his team at Local Demo Service has been a superior experience. They are reliable, easy to work with and their Rock Star Brand Ambassadors product results that we are very happy with. We will continue to work with LDS as we grow our business. ',
+      snippet: `...product results that we are very happy with.`,
+      attribution: "Laird's Superfood"
+    }
+  },
+  {
+    image: yerbaMontana,
+    testimonial: {
+      text: 'Working with Matt and Local Demo Service has been a game changer for our business.  Aside from helping us double our retail locations in the span of a few months, Matthew and LDS has been an invaluable resource for information on best practices, packaging and trends in the industry.  They also do a great job of promoting our products in stores.  I would 100% recommend working with Matthew and LDS if you get a chance.',
+      snippet: `Working with Matt and Local Demo Service has been a game changer for our business.`,
+      attribution: null
     }
   }
 ]
