@@ -12,6 +12,7 @@ import maunakea from '../../images/maunakea.png'
 import iggys from '../../images/iggys.png'
 import lairds from '../../images/lairds.png'
 import yerbaMontana from '../../images/yerbaMontana.png'
+import shivelight from '../../images/shivelight.jpg'
 import { HomePageWrapper, Border, colors, mq } from '../../components/styled/common'
 
 
@@ -42,24 +43,15 @@ const partners = [
   },
   {
     image: jem,
-    testimonial: {
-      text: null,
-      attribution: null
-    }
+    testimonial: {}
   },
   {
     image: rusty,
-    testimonial: {
-      text: null,
-      attribution: null
-    }
+    testimonial: {}
   },
   {
     image: alterEco,
-    testimonial: {
-      text: null,
-      attribution: null
-    }
+    testimonial: {}
   },
   {
     image: maunakea,
@@ -73,24 +65,32 @@ const partners = [
     image: iggys,
     testimonial: {
       text: 'We trust Matthew & Team with the demonstration of our products in multiple states. They are professionals at what they do and we\'re lucky to have found them. Thank you, [Local Demo Service]!',
-      snippet: `We trust Matthew & Team`,
-      attribution: null
+      snippet: `We trust Matthew & Team...`,
+      attribution: 'Mikail - Iggy\'s Alive & Cultured'
     }
   },
   {
     image: lairds,
     testimonial: {
-      text: 'Working with Matthew and his team at Local Demo Service has been a superior experience. They are reliable, easy to work with and their Rock Star Brand Ambassadors product results that we are very happy with. We will continue to work with LDS as we grow our business. ',
+      text: 'Working with Matthew and his team at Local Demo Service has been a superior experience. They are reliable, easy to work with and their Rock Star Brand Ambassadors product results that we are very happy with. We will continue to work with Local Demo Service as we grow our business. ',
       snippet: `...product results that we are very happy with.`,
-      attribution: "Laird's Superfood"
+      attribution: "Ricky - Laird's Superfood"
     }
   },
   {
     image: yerbaMontana,
     testimonial: {
-      text: 'Working with Matt and Local Demo Service has been a game changer for our business.  Aside from helping us double our retail locations in the span of a few months, Matthew and LDS has been an invaluable resource for information on best practices, packaging and trends in the industry.  They also do a great job of promoting our products in stores.  I would 100% recommend working with Matthew and LDS if you get a chance.',
+      text: 'Working with Matt and Local Demo Service has been a game changer for our business.  Aside from helping us double our retail locations in the span of a few months, Matthew and Local Demo Service has been an invaluable resource for information on best practices, packaging and trends in the industry.  They also do a great job of promoting our products in stores.  I would 100% recommend working with Matthew and Local Demo Service if you get a chance.',
       snippet: `Working with Matt and Local Demo Service has been a game changer for our business.`,
-      attribution: null
+      attribution: 'Mackay - Yerba Montana'
+    }
+  },
+  {
+    image: shivelight,
+    testimonial: {
+      text: 'Matthew Kubick and his team of demonstrators have amplified our brand beyond what we could have expected. As a broker, Matthew has opened many doors for our products, and the demo support is a huge part of making our stuff appealing to buyers. Matthew and his team are conscientious, results oriented, hard working and honest. They have made our goals their own, and have done nothing less than a remarkable job of advancing them. We could not be more pleased in our partnership with Local Demo Service.',
+      snippet: `...has opened many doors for our products`,
+      attribution: 'Derrick - Shivelight'
     }
   }
 ]
