@@ -18,14 +18,6 @@ import { HomePageWrapper, Border, colors, mq } from '../../components/styled/com
 
 const partners = [
   {
-    image: ahualoa,
-    testimonial: {}
-  },
-  {
-    image: ohi,
-    testimonial: {}
-  },
-  {
     image: mauiFruit,
     testimonial: {
       snippet: `They have achieved success for my business Maui Fruit Jewels`,
@@ -34,31 +26,19 @@ const partners = [
     }
   },
   {
+    image: ahualoa,
+    testimonial: {}
+  },
+  {
+    image: ohi,
+    testimonial: {}
+  },
+  {
     image: rawkin,
     testimonial: {
       snippet: `I am very pleased with the work from Local Demo Service and highly recommend them`,
       text: `Local Demo Service has brought Rawkin Raw into new stores such as Hawaii's Down to Earth chain, Winterridge Foods in Idaho, Natural Grocers Durango, Huckleeberry's in the Pacific North West; plus saved our products from being dropped at multiple Natural Grocers. The Natural Grocers buyers from the Farmington New Mexico and Couer d'Alene Idaho locations had less than optimal location for my product so sales were not ideal; leading the buyers to discontinue the product. Local Demo Service jumped in and offered demos continuing Rawkin Raw at these locations plus bringing in new flavors and increasing shelf space. I am very pleased with the work from Local Demo Service and highly recommend them to other sustainable food brands!`,
       attribution: `Erinn Williams, Founder Rawkin Raw`,
-    }
-  },
-  {
-    image: jem,
-    testimonial: {}
-  },
-  {
-    image: rusty,
-    testimonial: {}
-  },
-  {
-    image: alterEco,
-    testimonial: {}
-  },
-  {
-    image: maunakea,
-    testimonial: {
-      text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
-      snippet: '...increased sales, and received much better placement',
-      attribution: 'Kimberly Ino, Founder'
     }
   },
   {
@@ -70,12 +50,8 @@ const partners = [
     }
   },
   {
-    image: lairds,
-    testimonial: {
-      text: 'Working with Matthew and his team at Local Demo Service has been a superior experience. They are reliable, easy to work with and their Rock Star Brand Ambassadors product results that we are very happy with. We will continue to work with Local Demo Service as we grow our business. ',
-      snippet: `...product results that we are very happy with.`,
-      attribution: "Ricky - Laird's Superfood"
-    }
+    image: rusty,
+    testimonial: {}
   },
   {
     image: yerbaMontana,
@@ -84,6 +60,30 @@ const partners = [
       snippet: `Working with Matt and Local Demo Service has been a game changer for our business.`,
       attribution: 'Mackay - Yerba Montana'
     }
+  },
+  {
+    image: maunakea,
+    testimonial: {
+      text: `Local Demo Service has been serving our company for the past 1.5 years performing in-store demo's, monitoring inventory and buyer relationships, plus soliciting new accounts such as Down to Earth chain Hawaii. They have been successful in boosting Mauna Kea Tea's off-island sales. When I began with Local demo service Whole Foods Kahala was discontinuing our products but through the persistence of Local Demo Service, Whole Foods Kahala brought back Mauna Kea Tea, increased sales, and received much better placement. I recommend Local Demo Service without hesitation!`,
+      snippet: '...increased sales, and received much better placement',
+      attribution: 'Kimberly Ino, Founder'
+    }
+  },
+  {
+    image: jem,
+    testimonial: {}
+  },
+  {
+    image: lairds,
+    testimonial: {
+      text: 'Working with Matthew and his team at Local Demo Service has been a superior experience. They are reliable, easy to work with and their Rock Star Brand Ambassadors product results that we are very happy with. We will continue to work with Local Demo Service as we grow our business. ',
+      snippet: `...product results that we are very happy with.`,
+      attribution: "Ricky - Laird's Superfood"
+    }
+  },
+  {
+    image: alterEco,
+    testimonial: {}
   },
   {
     image: shivelight,
