@@ -14,13 +14,13 @@ const teamMembers = [
   {
     name: "Matt Lonestar",
     role: "Director of Operations",
-    bio: "Northern Idaho, Eastern Washington",
+    bio: "Matt has 15 years in fine-food retail and restaurant management. Matt has a wife and 6 children who strive to live in the conviction of sustainable living. Matt manages the Pacific North West and oversees all regional managers and the development of Local Demo Services core team members. You might catch him demoing or training one of our Brand Ambassadors in Northern Idaho or Eastern Washington!",
     image: "lonestar"
   },
   {
     name: "Will Gregory",
-    role: "Director of Operations",
-    bio: "Northern Idaho, Eastern Washington",
+    role: "Director of Distribution",
+    bio: "Will is a retired MRI Specialist ready to upgrade quality food and beverage distribution to F&B startups. Will is hapilly married, a Father and Step Father, and Matthew Kubick's Father-in-Law. He covers Northern Idaho, Western Montana, and Eastern Washington with demos and distribution. When he is not building his distribution unit, he is either snowboarding black daimonds at Schweitzer Mountain, writing and recording music, or spending time with his family.",
     image: "gregory"
   },
 ];
