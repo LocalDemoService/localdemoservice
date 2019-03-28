@@ -14,7 +14,7 @@ const teamMembers = [
   {
     name: "Matt Lonestar",
     role: "Director of Operations",
-    bio: "Matt has 15 years in fine-food retail and restaurant management. Matt has a wife and 6 children who strive to live in the conviction of sustainable living. Matt manages the Pacific North West and oversees all regional managers and the development of Local Demo Services core team members. You might catch him demoing or training one of our Brand Ambassadors in Northern Idaho or Eastern Washington!",
+    bio: "Matt has 15 years in fine-food retail and restaurant management. Matt has a wife and 6 children who strive to live in the conviction of a sustainable life. Matt manages the Pacific North West and oversees all regional managers and the development of Local Demo Services core team members. You might catch him demoing or training one of our Brand Ambassadors in Northern Idaho or Eastern Washington!",
     image: "lonestar"
   },
   {
