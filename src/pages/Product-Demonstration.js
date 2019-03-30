@@ -22,7 +22,7 @@ const ProductDemonstration = () => {
         <ul>
           {services.map(service => <li key={service}>{service}</li>)}
         </ul>
-        <p>Interested in hearing more about Product Demonstration? Call us at 808-722-5492 or fill in the ‘Contact Form’ to the right and ask about our referral program!</p>
+        <p>Interested in hearing Product Demonstration Rates? Call us at 808-722-5492 or fill in the ‘Contact Form’ to the right and ask about our referral program!</p>
       </MainColumn>
       <SideColumn>
         <Contact />
