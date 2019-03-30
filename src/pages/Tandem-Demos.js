@@ -10,7 +10,7 @@ const TandemDemos = () => {
       <MainColumn>
         <Title>Tandem Demos with Local Demo Service</Title>
         <p>An affordable way to increase exposure and overall sales is through our tandem demo system. We sample and sell your products alongside another tandem partner. Pairings are complementary; for example Chips & Salsa, Coffee & Chocolate, Jam & Baked Goods, etc.</p>
-        <p>Interested in hearing Tandem Demo Rates? Call us at 808-722-5492 or fill in the ‘Contact Form’ to the right and ask about our referral program!</p>
+        <p>Interested in hearing Tandem Demo rates? Call us at 808-722-5492 or fill in the ‘Contact Form’ to the right and ask about our referral program!</p>
         <Aside>
           <img src={rustys} style={{ width: 150 }} />
           <small>Tandem demos at Whole Foods locations more than doubled sales of Rusty’s Hawaiian Coffee in under one year.</small>
