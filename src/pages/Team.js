@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Will Gregory",
     role: "Director of Distribution",
-    bio: "Will is a retired MRI Specialist ready to upgrade quality food and beverage distribution to F&B startups. Will is hapilly married, a Father and Step Father, and Matthew Kubick's Father-in-Law. He covers Northern Idaho, Western Montana, and Eastern Washington with demos and distribution. When he is not building his distribution unit, he is either snowboarding black daimonds at Schweitzer Mountain, writing and recording music, or spending time with his family.",
+    bio: "Will is a retired MRI Specialist ready to upgrade quality food and beverage distribution to F&B startups. Will is happily married, a Father and Step Father, and Matthew Kubick's Father-in-Law. He covers Northern Idaho, Western Montana, and Eastern Washington with demos and distribution. When he is not building his distribution unit, he is either snowboarding black daimonds at Schweitzer Mountain, writing and recording music, or spending time with his family.",
     image: "gregory"
   },
 ];
