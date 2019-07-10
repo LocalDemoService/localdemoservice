@@ -25,16 +25,16 @@ const locations = {
     places: ['Natural Grocers', 'Safeway', `Huckleberry's`, 'Pilgrims']
   },
   sanFransico: {
-    city: 'San Francisco, California',
-    places: ['Rainbow Grocers', 'Whole Foods', 'Pharmaca']
+    city: 'Seattle, Washington',
+    places: ['Met Markets', 'PCC', 'Pharmaca', 'New Seasons', 'REI', 'QFC']
   },
   farmington: {
-    city: 'Farmington, New Mexico',
-    places: ['Natural Grocers']
+    city: 'Boise, Idaho',
+    places: ['Natural Grocers', 'Boise Coop']
   },
   durango: {
-    city: 'Durango, Colorado',
-    places: ['Natural Grocers', `Nature's Oasis`, 'Durango Natural Foods Coop']
+    city: 'Big Island, Hawaii',
+    places: ['Island Naturals', `Abundant Life`, 'Foodland']
   }
 }
 
