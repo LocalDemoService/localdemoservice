@@ -1,5 +1,5 @@
 ---
-title: 'Crafting a Tonic Taste: '
+title: Crafting a Tonic Taste
 date: '2019-07-24T14:48:55-10:00'
 description: |+
   Huckleberry and Cherry Shivelight Shrubs prepared by Local Demo Service 
