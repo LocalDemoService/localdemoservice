@@ -23,6 +23,12 @@ const teamMembers = [
     bio: "Will is a retired MRI Specialist ready to upgrade quality food and beverage distribution to F&B startups. Will is happily married, a Father and Step Father, and Matthew Kubick's Father-in-Law. He covers Northern Idaho, Western Montana, and Eastern Washington with demos and distribution. When he is not building his distribution unit, he is either snowboarding black daimonds at Schweitzer Mountain, writing and recording music, or spending time with his family.",
     image: "gregory"
   },
+  {
+    name: "Kayla Erickson",
+    role: "Seattle Regional Manager",
+    bio: "Kayla was born and raised in Seattle by musician parents. Growing up in such a loud, creative household, being outgoing and talkative came naturally. Kayla has been in customer facing positions for over 13 years and management for 5 years. Kayla has grown very passionate about improving someone's day in small, memorable ways. When Kayla isn't demoing, she is usually out experiencing the Seattle jazz scene and supporting her very talented family and friends.",
+    image: "gregory"
+  },
 ];
 
 const Team = ({ data }) => {
@@ -52,6 +58,11 @@ export const query = graphql`
       }
     }
     gregory: imageSharp(id: { regex: "/willGregory.jpg/" }) {
+      sizes(maxWidth: 250, maxHeight: 250) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    erickson: imageSharp(id: { regex: "/erickson.jpg/" }) {
       sizes(maxWidth: 250, maxHeight: 250) {
         ...GatsbyImageSharpSizes
       }
