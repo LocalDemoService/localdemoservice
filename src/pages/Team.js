@@ -27,7 +27,7 @@ const teamMembers = [
     name: "Kayla Erickson",
     role: "Seattle Regional Manager",
     bio: "Kayla was born and raised in Seattle by musician parents. Growing up in such a loud, creative household, being outgoing and talkative came naturally. Kayla has been in customer facing positions for over 13 years and management for 5 years. Kayla has grown very passionate about improving someone's day in small, memorable ways. When Kayla isn't demoing, she is usually out experiencing the Seattle jazz scene and supporting her very talented family and friends.",
-    image: "gregory"
+    image: "erickson"
   },
 ];
 
