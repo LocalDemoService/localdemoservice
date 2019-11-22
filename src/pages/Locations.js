@@ -18,7 +18,7 @@ const locations = {
   },
   spokane: {
     city: 'Spokane, Washington',
-    places: [`Huckleberry's`, 'Safeway', 'Yokes', 'Super 1']
+    places: [`Huckleberry's`, 'Safeway', 'Yokes', 'Super 1', 'My Fresh Basket', 'Rosauers']
   },
   coeurdalene: {
     city: `Couer d'Alene, Idaho`,
@@ -26,15 +26,15 @@ const locations = {
   },
   sanFransico: {
     city: 'Seattle, Washington',
-    places: ['Met Markets', 'PCC', 'Pharmaca', 'New Seasons', 'REI', 'QFC']
+    places: ['Met Markets', 'PCC', 'Pharmaca', 'New Seasons', 'REI', 'QFC', 'Kens Market']
   },
   farmington: {
     city: 'Boise, Idaho',
-    places: ['Natural Grocers', 'Boise Coop']
+    places: ['Natural Grocers', 'Boise Coop', 'Albertsons', 'Fred Meyer']
   },
   durango: {
     city: 'Big Island, Hawaii',
-    places: ['Island Naturals', `Abundant Life`, 'Foodland']
+    places: ['Island Naturals', `Abundant Life`, 'Foodland', 'Sack n Save']
   }
 }
 
