@@ -35,6 +35,10 @@ const locations = {
   durango: {
     city: 'Big Island, Hawaii',
     places: ['Island Naturals', `Abundant Life`, 'Foodland', 'Sack n Save']
+  },
+  Portland: {
+    city: `Portland, Oregon`,
+    places: ['Natural Grocers', 'Zupans Market', `New Seasons Market`, 'Green Zebra', 'QFCs']
   }
 }
 
